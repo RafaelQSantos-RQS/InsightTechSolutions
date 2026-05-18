@@ -1,59 +1,68 @@
-# InsightTechSolutions
+# InsightTech Solutions
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.8.
+Corporate website for InsightTech Solutions - a data analytics and business intelligence company based in Salvador, Brazil.
 
-## Development server
+## 🚀 Features
 
-To start a local development server, run:
+- **Modern Angular 21** - Standalone components, signals, lazy loading
+- **Internationalization (i18n)** - English and Portuguese support with instant language switching
+- **Responsive Design** - Mobile-first with glassmorphism navbar
+- **SEO Optimized** - Lazy-loaded routes, optimized images, scroll-to-top navigation
+- **Design System** - Custom SCSS variables and mixins
+
+## 🛠️ Tech Stack
+
+- Angular 21 with standalone components
+- SCSS for styling
+- NgOptimizedImage for optimized image loading
+- Reactive Forms for contact page
+
+## 📦 Getting Started
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Development server
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Navigate to `http://localhost:4200/`
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+### Build
 
 ```bash
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Production build saved to `dist/InsightTechSolutions`
 
-## Running unit tests
+## 🌐 Language Support
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+The website supports English and Portuguese. Use the globe icon in the navbar to switch languages. Language preference is saved in localStorage.
 
-```bash
-ng test
+## 📁 Project Structure
+
+```
+src/app/
+├── components/        # Reusable components (Navbar, Footer, LanguageSelector)
+├── pages/            # Page components (Home, Services, Contact, etc.)
+├── pipes/            # Custom pipes (TranslatePipe)
+├── services/        # Services (LanguageService)
+├── i18n/            # Translation JSON files (en.json, pt-br.json)
+└── styles/          # SCSS variables and mixins
 ```
 
-## Running end-to-end tests
+## 📄 Pages
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- **Home** - Hero section, expertise cards, values
+- **Services** - Data Engineering, Data Science, Analysis, Consulting
+- **Case Studies** - Healthcare, Finance, Industry case studies
+- **Contact** - Contact form, office info, partnerships/careers
+- **Privacy Policy** - Legal information
+- **Terms of Service** - Legal information
+- **Cookie Policy** - Cookie usage information
