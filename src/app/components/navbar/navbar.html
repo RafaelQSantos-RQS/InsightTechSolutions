@@ -6,15 +6,18 @@
     </a>
 
     <nav class="navbar__nav" [class.navbar__nav--open]="isMenuOpen()">
-      <a routerLink="/" routerLinkActive="navbar__link--active" [routerLinkActiveOptions]="{ exact: true }" class="navbar__link">Home</a>
-      <a routerLink="/services" routerLinkActive="navbar__link--active" class="navbar__link">Services</a>
-      <a routerLink="/case-studies" routerLinkActive="navbar__link--active" class="navbar__link">Case Studies</a>
-      <a routerLink="/contact" routerLinkActive="navbar__link--active" class="navbar__link">Contact</a>
+      <a routerLink="/" routerLinkActive="navbar__link--active" [routerLinkActiveOptions]="{ exact: true }" class="navbar__link">{{ 'nav.home' | translate }}</a>
+      <a routerLink="/services" routerLinkActive="navbar__link--active" class="navbar__link">{{ 'nav.services' | translate }}</a>
+      <a routerLink="/case-studies" routerLinkActive="navbar__link--active" class="navbar__link">{{ 'nav.caseStudies' | translate }}</a>
+      <a routerLink="/contact" routerLinkActive="navbar__link--active" class="navbar__link">{{ 'nav.contact' | translate }}</a>
     </nav>
 
-    <button class="navbar__cta" routerLink="/contact">
-      Get Started
-    </button>
+    <div class="navbar__actions">
+      <button class="navbar__cta" routerLink="/contact">
+        {{ 'common.getStarted' | translate }}
+      </button>
+      <app-language-selector />
+    </div>
 
     <button class="navbar__mobile-toggle" (click)="toggleMenu()" aria-label="Toggle menu" [attr.aria-expanded]="isMenuOpen()">
       <span class="material-symbols-outlined">{{ isMenuOpen() ? 'close' : 'menu' }}</span>

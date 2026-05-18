@@ -2,20 +2,12 @@
 <section class="services-hero">
   <div class="services-hero__container">
     <div class="services-hero__content">
-      <span class="services-hero__badge">CORE OFFERINGS</span>
-      <h1 class="services-hero__title">
-        Architecting Intelligence from Complex Data Streams
-      </h1>
-      <p class="services-hero__description">
-        We deliver end-to-end data capabilities engineered for enterprise scale. From robust foundational pipelines to predictive modeling and executive dashboards, our suite of services is designed to transform raw information into institutional clarity and strategic advantage.
-      </p>
+      <span class="services-hero__badge">{{ 'services.hero.badge' | translate }}</span>
+      <h1 class="services-hero__title">{{ 'services.hero.title' | translate }}</h1>
+      <p class="services-hero__description">{{ 'services.hero.description' | translate }}</p>
     </div>
     <div class="services-hero__image">
-      <img
-        src="/data-vizualization.jpg"
-        alt="Data Visualization Dashboard"
-        class="services-hero__img"
-      />
+      <img src="/data-vizualization.jpg" alt="Data Visualization Dashboard" class="services-hero__img" />
     </div>
   </div>
 </section>
@@ -24,28 +16,117 @@
 <section class="services-grid">
   <div class="services-grid__container">
     <div class="services-grid__items">
-      @for (service of services; track service.title) {
-        <article class="service-card">
-          <div class="service-card__header">
-            <div class="service-card__icon">
-              <span class="material-symbols-outlined">{{ service.icon }}</span>
-            </div>
-            <h2 class="service-card__title">{{ service.title }}</h2>
+      <!-- Data Engineering -->
+      <article class="service-card">
+        <div class="service-card__header">
+          <div class="service-card__icon">
+            <span class="material-symbols-outlined">schema</span>
           </div>
-          <p class="service-card__description">{{ service.description }}</p>
-          <div class="service-card__benefits">
-            <h3 class="service-card__benefits-title">Core Benefits</h3>
-            <ul class="service-card__list">
-              @for (benefit of service.benefits; track benefit) {
-                <li class="service-card__list-item">
-                  <span class="material-symbols-outlined service-card__check">check_circle</span>
-                  <span>{{ benefit }}</span>
-                </li>
-              }
-            </ul>
+          <h2 class="service-card__title">{{ 'services.dataEngineering.title' | translate }}</h2>
+        </div>
+        <p class="service-card__description">{{ 'services.dataEngineering.description' | translate }}</p>
+        <div class="service-card__benefits">
+          <h3 class="service-card__benefits-title">{{ 'services.dataEngineering.benefits' | translate }}</h3>
+          <ul class="service-card__list">
+            <li class="service-card__list-item">
+              <span class="material-symbols-outlined service-card__check">check_circle</span>
+              <span>{{ 'services.dataEngineering.items.0' | translate }}</span>
+            </li>
+            <li class="service-card__list-item">
+              <span class="material-symbols-outlined service-card__check">check_circle</span>
+              <span>{{ 'services.dataEngineering.items.1' | translate }}</span>
+            </li>
+            <li class="service-card__list-item">
+              <span class="material-symbols-outlined service-card__check">check_circle</span>
+              <span>{{ 'services.dataEngineering.items.2' | translate }}</span>
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Data Science -->
+      <article class="service-card">
+        <div class="service-card__header">
+          <div class="service-card__icon">
+            <span class="material-symbols-outlined">memory</span>
           </div>
-        </article>
-      }
+          <h2 class="service-card__title">{{ 'services.dataScience.title' | translate }}</h2>
+        </div>
+        <p class="service-card__description">{{ 'services.dataScience.description' | translate }}</p>
+        <div class="service-card__benefits">
+          <h3 class="service-card__benefits-title">{{ 'services.dataScience.benefits' | translate }}</h3>
+          <ul class="service-card__list">
+            <li class="service-card__list-item">
+              <span class="material-symbols-outlined service-card__check">check_circle</span>
+              <span>{{ 'services.dataScience.items.0' | translate }}</span>
+            </li>
+            <li class="service-card__list-item">
+              <span class="material-symbols-outlined service-card__check">check_circle</span>
+              <span>{{ 'services.dataScience.items.1' | translate }}</span>
+            </li>
+            <li class="service-card__list-item">
+              <span class="material-symbols-outlined service-card__check">check_circle</span>
+              <span>{{ 'services.dataScience.items.2' | translate }}</span>
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Data Analysis -->
+      <article class="service-card">
+        <div class="service-card__header">
+          <div class="service-card__icon">
+            <span class="material-symbols-outlined">bar_chart</span>
+          </div>
+          <h2 class="service-card__title">{{ 'services.dataAnalysis.title' | translate }}</h2>
+        </div>
+        <p class="service-card__description">{{ 'services.dataAnalysis.description' | translate }}</p>
+        <div class="service-card__benefits">
+          <h3 class="service-card__benefits-title">{{ 'services.dataAnalysis.benefits' | translate }}</h3>
+          <ul class="service-card__list">
+            <li class="service-card__list-item">
+              <span class="material-symbols-outlined service-card__check">check_circle</span>
+              <span>{{ 'services.dataAnalysis.items.0' | translate }}</span>
+            </li>
+            <li class="service-card__list-item">
+              <span class="material-symbols-outlined service-card__check">check_circle</span>
+              <span>{{ 'services.dataAnalysis.items.1' | translate }}</span>
+            </li>
+            <li class="service-card__list-item">
+              <span class="material-symbols-outlined service-card__check">check_circle</span>
+              <span>{{ 'services.dataAnalysis.items.2' | translate }}</span>
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Consulting -->
+      <article class="service-card">
+        <div class="service-card__header">
+          <div class="service-card__icon">
+            <span class="material-symbols-outlined">lightbulb</span>
+          </div>
+          <h2 class="service-card__title">{{ 'services.consulting.title' | translate }}</h2>
+        </div>
+        <p class="service-card__description">{{ 'services.consulting.description' | translate }}</p>
+        <div class="service-card__benefits">
+          <h3 class="service-card__benefits-title">{{ 'services.consulting.benefits' | translate }}</h3>
+          <ul class="service-card__list">
+            <li class="service-card__list-item">
+              <span class="material-symbols-outlined service-card__check">check_circle</span>
+              <span>{{ 'services.consulting.items.0' | translate }}</span>
+            </li>
+            <li class="service-card__list-item">
+              <span class="material-symbols-outlined service-card__check">check_circle</span>
+              <span>{{ 'services.consulting.items.1' | translate }}</span>
+            </li>
+            <li class="service-card__list-item">
+              <span class="material-symbols-outlined service-card__check">check_circle</span>
+              <span>{{ 'services.consulting.items.2' | translate }}</span>
+            </li>
+          </ul>
+        </div>
+      </article>
     </div>
   </div>
 </section>

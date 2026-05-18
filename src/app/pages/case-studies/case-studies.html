@@ -2,9 +2,9 @@
 <section class="case-header">
   <div class="case-header__container">
     <div class="case-header__content">
-      <h1 class="case-header__title">Driving Global Results</h1>
+      <h1 class="case-header__title">{{ 'caseStudies.header.title' | translate }}</h1>
       <p class="case-header__description">
-        Discover how InsightTech Solutions leverages advanced data analytics to solve complex challenges across Healthcare, Finance, and Industry. Our proprietary methodologies transform raw data into actionable intelligence.
+        {{ 'caseStudies.header.description' | translate }}
       </p>
     </div>
   </div>
@@ -14,30 +14,30 @@
 <section class="case-grid">
   <div class="case-grid__container">
     <div class="case-grid__items">
-      @for (study of caseStudies; track study.title) {
+      @for (study of caseStudies; track study.titleKey) {
         <article class="case-card">
           <div class="case-card__image-wrapper">
             <img
               [ngSrc]="study.image"
               width="400"
               height="192"
-              [alt]="study.category + ' Data'"
+              [alt]="study.categoryKey | translate"
               class="case-card__image"
             />
-            <span class="case-card__category">{{ study.category }}</span>
+            <span class="case-card__category">{{ study.categoryKey | translate }}</span>
           </div>
           <div class="case-card__content">
-            <h3 class="case-card__title">{{ study.title }}</h3>
+            <h3 class="case-card__title">{{ study.titleKey | translate }}</h3>
             <div class="case-card__section">
-              <strong class="case-card__label">Problem:</strong>
-              <p class="case-card__text">{{ study.problem }}</p>
+              <strong class="case-card__label">{{ study.problemLabelKey | translate }}</strong>
+              <p class="case-card__text">{{ study.problemTextKey | translate }}</p>
             </div>
             <div class="case-card__section">
-              <strong class="case-card__label">Solution:</strong>
-              <p class="case-card__text">{{ study.solution }}</p>
+              <strong class="case-card__label">{{ study.solutionLabelKey | translate }}</strong>
+              <p class="case-card__text">{{ study.solutionTextKey | translate }}</p>
             </div>
             <a routerLink="/contact" class="case-card__link">
-              View Details <span class="material-symbols-outlined">arrow_forward</span>
+              {{ 'common.viewDetails' | translate }} <span class="material-symbols-outlined">arrow_forward</span>
             </a>
           </div>
         </article>
@@ -51,19 +51,19 @@
   <div class="expansion__container">
     <div class="expansion__grid">
       <div class="expansion__content">
-        <span class="expansion__label">FUTURE OUTLOOK</span>
-        <h2 class="expansion__title">Global Expansion Goals</h2>
+        <span class="expansion__label">{{ 'caseStudies.expansion.label' | translate }}</span>
+        <h2 class="expansion__title">{{ 'caseStudies.expansion.title' | translate }}</h2>
         <p class="expansion__description">
-          InsightTech Solutions is committed to bringing premier data intelligence to global markets. As outlined in our strategic roadmap, we are actively scaling our infrastructure to establish a strong operational presence in 15 countries by 2031.
+          {{ 'caseStudies.expansion.description' | translate }}
         </p>
         <div class="expansion__stats">
           <div class="expansion__stat">
             <span class="expansion__stat-value">15</span>
-            <span class="expansion__stat-label">Target Countries</span>
+            <span class="expansion__stat-label">{{ 'caseStudies.expansion.countries' | translate }}</span>
           </div>
           <div class="expansion__stat">
             <span class="expansion__stat-value">2031</span>
-            <span class="expansion__stat-label">Target Year</span>
+            <span class="expansion__stat-label">{{ 'caseStudies.expansion.year' | translate }}</span>
           </div>
         </div>
       </div>

@@ -70,17 +70,22 @@
     }
   }
 
-  &__cta {
+  &__actions {
     display: none;
+    align-items: center;
+    gap: 16px;
+
+    @include tablet-up {
+      display: flex;
+    }
+  }
+
+  &__cta {
     @include button-base;
     background-color: $color-cta-orange;
     color: $color-on-primary;
     padding: 10px 24px;
     border-radius: $radius-default;
-
-    @include tablet-up {
-      display: inline-flex;
-    }
 
     &:hover {
       background-color: #c2410c;

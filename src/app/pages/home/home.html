@@ -4,21 +4,21 @@
     <div class="hero__content">
       <div class="hero__badge">
         <span class="hero__badge-dot"></span>
-        Data-Driven Intelligence
+        {{ 'home.hero.badge' | translate }}
       </div>
       <h1 class="hero__title">
-        Transforming Data into <span class="hero__title-accent">Strategic Knowledge</span>.
+        {{ 'home.hero.title' | translate }}
       </h1>
       <p class="hero__description">
-        At InsightTech Solutions, we specialize in comprehensive data engineering, analytics, and business intelligence. We empower organizations to transcend intuition, enabling assertive decision-making through rigorous, high-quality data analysis tailored to unique institutional structures.
+        {{ 'home.hero.description' | translate }}
       </p>
       <div class="hero__actions">
         <a routerLink="/contact" class="hero__btn hero__btn--primary">
-          Get Started
+          {{ 'common.getStarted' | translate }}
           <span class="material-symbols-outlined">arrow_forward</span>
         </a>
         <a routerLink="/services" class="hero__btn hero__btn--secondary">
-          Explore Capabilities
+          {{ 'common.explore' | translate }}
         </a>
       </div>
     </div>
@@ -26,7 +26,7 @@
       <div class="hero__chart-card">
         <div class="hero__chart-header">
           <div>
-            <h3 class="hero__chart-label">Signal Processing</h3>
+            <h3 class="hero__chart-label">{{ 'home.hero.signalProcessing' | translate }}</h3>
             <div class="hero__chart-value">94.2%</div>
           </div>
           <span class="material-symbols-outlined hero__chart-icon">analytics</span>
@@ -47,24 +47,20 @@
 <section class="expertise">
   <div class="expertise__container">
     <div class="expertise__header">
-      <h2 class="expertise__title">Our Expertise</h2>
-      <p class="expertise__subtitle">
-        A robust, scalable approach to data intelligence. We provide an end-to-end ecosystem designed for C-suite strategic clarity.
-      </p>
+      <h2 class="expertise__title">{{ 'home.expertise.title' | translate }}</h2>
+      <p class="expertise__subtitle">{{ 'home.expertise.subtitle' | translate }}</p>
     </div>
     <div class="expertise__grid">
       <article class="expertise__card expertise__card--large">
         <div class="expertise__card-icon">
           <span class="material-symbols-outlined">architecture</span>
         </div>
-        <h3 class="expertise__card-title">Data Engineering</h3>
-        <p class="expertise__card-description">
-          Developing robust architectures encompassing the full lifecycle of data handling—from collection and storage to transformation and structuring. We ensure high availability, security, and performance for complex datasets.
-        </p>
+        <h3 class="expertise__card-title">{{ 'home.expertise.dataEngineering.title' | translate }}</h3>
+        <p class="expertise__card-description">{{ 'home.expertise.dataEngineering.description' | translate }}</p>
         <div class="expertise__tags">
-          <span class="expertise__tag">Pipeline Design</span>
-          <span class="expertise__tag">Warehousing</span>
-          <span class="expertise__tag">ETL</span>
+          @for (tag of ['home.expertise.dataEngineering.tags.0' | translate, 'home.expertise.dataEngineering.tags.1' | translate, 'home.expertise.dataEngineering.tags.2' | translate]; track tag) {
+            <span class="expertise__tag">{{ tag }}</span>
+          }
         </div>
       </article>
 
@@ -72,12 +68,10 @@
         <div class="expertise__card-icon expertise__card-icon--cyan">
           <span class="material-symbols-outlined">science</span>
         </div>
-        <h3 class="expertise__card-title">Data Science</h3>
-        <p class="expertise__card-description expertise__card-description--light">
-          Applying advanced analytical techniques and machine learning models to extract deep insights, identify hidden patterns, and construct predictive scenarios.
-        </p>
+        <h3 class="expertise__card-title">{{ 'home.expertise.dataScience.title' | translate }}</h3>
+        <p class="expertise__card-description expertise__card-description--light">{{ 'home.expertise.dataScience.description' | translate }}</p>
         <a routerLink="/services" class="expertise__card-link">
-          View Methodologies <span class="material-symbols-outlined">arrow_forward</span>
+          {{ 'home.expertise.dataScience.link' | translate }} <span class="material-symbols-outlined">arrow_forward</span>
         </a>
       </article>
 
@@ -85,21 +79,17 @@
         <div class="expertise__card-icon">
           <span class="material-symbols-outlined">dashboard</span>
         </div>
-        <span class="expertise__badge">Core Capability</span>
-        <h3 class="expertise__card-title">Business Intelligence</h3>
-        <p class="expertise__card-description">
-          Translating complex technical analyses into strategic intelligence. We construct intuitive, real-time dashboards and comprehensive reports tailored to specific management indicators.
-        </p>
+        <span class="expertise__badge">{{ 'home.expertise.bi.badge' | translate }}</span>
+        <h3 class="expertise__card-title">{{ 'home.expertise.bi.title' | translate }}</h3>
+        <p class="expertise__card-description">{{ 'home.expertise.bi.description' | translate }}</p>
       </article>
 
       <article class="expertise__card">
         <div class="expertise__card-icon">
           <span class="material-symbols-outlined">code_blocks</span>
         </div>
-        <h3 class="expertise__card-title">Tailored Systems</h3>
-        <p class="expertise__card-description">
-          Every organization has a unique DNA. We do not rely solely on off-the-shelf tools; instead, we build bespoke analytical ecosystems that align perfectly with your internal processes.
-        </p>
+        <h3 class="expertise__card-title">{{ 'home.expertise.tailored.title' | translate }}</h3>
+        <p class="expertise__card-description">{{ 'home.expertise.tailored.description' | translate }}</p>
       </article>
     </div>
   </div>
@@ -109,40 +99,32 @@
 <section class="values">
   <div class="values__container">
     <div class="values__header">
-      <h2 class="values__title">Our Values & Commitment</h2>
-      <p class="values__subtitle">
-        We build partnerships grounded in trust, rigorous methodology, and a commitment to transformative outcomes.
-      </p>
+      <h2 class="values__title">{{ 'home.values.title' | translate }}</h2>
+      <p class="values__subtitle">{{ 'home.values.subtitle' | translate }}</p>
     </div>
     <div class="values__grid">
       <div class="values__card">
         <div class="values__icon">
           <span class="material-symbols-outlined">verified</span>
         </div>
-        <h4 class="values__card-title">Excellence</h4>
-        <p class="values__card-description">
-          We pursue the highest technical standards in every project, ensuring robust architectures and precise analytical outputs that withstand rigorous scrutiny.
-        </p>
+        <h4 class="values__card-title">{{ 'home.values.excellence.title' | translate }}</h4>
+        <p class="values__card-description">{{ 'home.values.excellence.description' | translate }}</p>
       </div>
 
       <div class="values__card values__card--border">
         <div class="values__icon">
           <span class="material-symbols-outlined">gavel</span>
         </div>
-        <h4 class="values__card-title">Ethics & Privacy</h4>
-        <p class="values__card-description">
-          Operating with absolute transparency and integrity. We implement stringent security protocols to safeguard sensitive information and ensure compliance.
-        </p>
+        <h4 class="values__card-title">{{ 'home.values.ethics.title' | translate }}</h4>
+        <p class="values__card-description">{{ 'home.values.ethics.description' | translate }}</p>
       </div>
 
       <div class="values__card">
         <div class="values__icon">
           <span class="material-symbols-outlined">lightbulb</span>
         </div>
-        <h4 class="values__card-title">Continuous Innovation</h4>
-        <p class="values__card-description">
-          Remaining at the forefront of technological advancement. We proactively integrate novel methodologies to enhance analytical capabilities and client value.
-        </p>
+        <h4 class="values__card-title">{{ 'home.values.innovation.title' | translate }}</h4>
+        <p class="values__card-description">{{ 'home.values.innovation.description' | translate }}</p>
       </div>
     </div>
   </div>

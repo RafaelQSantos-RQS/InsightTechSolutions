@@ -1,36 +1,42 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { Component, ChangeDetectionStrategy, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { NgOptimizedImage } from '@angular/common';
+import { TranslatePipe } from '../../pipes/translate-pipe';
+import { LanguageService } from '../../services/language';
 
 @Component({
   selector: 'app-contact',
-  imports: [RouterLink, ReactiveFormsModule, NgOptimizedImage],
+  imports: [RouterLink, ReactiveFormsModule, NgOptimizedImage, TranslatePipe],
   templateUrl: './contact.html',
   styleUrl: './contact.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Contact {
+  private langService = inject(LanguageService);
+
   contactForm: FormGroup;
 
   industries = ['Finance', 'Healthcare', 'Retail', 'Technology', 'Other'];
 
   opportunities = [
     {
-      label: 'Collaborate',
-      title: 'Partnerships',
-      description: 'We actively seek strategic alliances with complementary technology providers to deliver comprehensive intelligence solutions.',
+      labelKey: 'contact.partnerships.label',
+      titleKey: 'contact.partnerships.title',
+      descriptionKey: 'contact.partnerships.description',
       link: '/contact',
-      linkText: 'Explore Partner Program',
+      linkTextKey: 'contact.partnerships.link',
     },
     {
-      label: 'Join Us',
-      title: 'Careers',
-      description: 'Build the future of business intelligence. We\'re looking for analytical minds and creative problem solvers.',
+      labelKey: 'contact.careers.label',
+      titleKey: 'contact.careers.title',
+      descriptionKey: 'contact.careers.description',
       link: '/contact',
-      linkText: 'View Open Positions',
+      linkTextKey: 'contact.careers.link',
     },
   ];
+
+  t = this.langService.t();
 
   constructor(private fb: FormBuilder) {
     this.contactForm = this.fb.group({
