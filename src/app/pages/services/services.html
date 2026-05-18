@@ -1,0 +1,51 @@
+<!-- Hero Section -->
+<section class="services-hero">
+  <div class="services-hero__container">
+    <div class="services-hero__content">
+      <span class="services-hero__badge">CORE OFFERINGS</span>
+      <h1 class="services-hero__title">
+        Architecting Intelligence from Complex Data Streams
+      </h1>
+      <p class="services-hero__description">
+        We deliver end-to-end data capabilities engineered for enterprise scale. From robust foundational pipelines to predictive modeling and executive dashboards, our suite of services is designed to transform raw information into institutional clarity and strategic advantage.
+      </p>
+    </div>
+    <div class="services-hero__image">
+      <img
+        src="/data-vizualization.jpg"
+        alt="Data Visualization Dashboard"
+        class="services-hero__img"
+      />
+    </div>
+  </div>
+</section>
+
+<!-- Services Grid -->
+<section class="services-grid">
+  <div class="services-grid__container">
+    <div class="services-grid__items">
+      @for (service of services; track service.title) {
+        <article class="service-card">
+          <div class="service-card__header">
+            <div class="service-card__icon">
+              <span class="material-symbols-outlined">{{ service.icon }}</span>
+            </div>
+            <h2 class="service-card__title">{{ service.title }}</h2>
+          </div>
+          <p class="service-card__description">{{ service.description }}</p>
+          <div class="service-card__benefits">
+            <h3 class="service-card__benefits-title">Core Benefits</h3>
+            <ul class="service-card__list">
+              @for (benefit of service.benefits; track benefit) {
+                <li class="service-card__list-item">
+                  <span class="material-symbols-outlined service-card__check">check_circle</span>
+                  <span>{{ benefit }}</span>
+                </li>
+              }
+            </ul>
+          </div>
+        </article>
+      }
+    </div>
+  </div>
+</section>

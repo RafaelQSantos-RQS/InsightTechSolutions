@@ -1,0 +1,113 @@
+<main class="contact">
+  <div class="contact__container">
+    <!-- Header -->
+    <div class="contact__header">
+      <h1 class="contact__title">Let's Connect</h1>
+      <p class="contact__description">
+        Whether you're looking to transform your data infrastructure, explore partnership opportunities, or join our growing team of analytical experts, we're ready to start the conversation.
+      </p>
+    </div>
+
+    <div class="contact__grid">
+      <!-- Contact Form -->
+      <div class="contact__form-wrapper">
+        <h2 class="contact__form-title">Send us a message</h2>
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact__form">
+          <div class="contact__form-row">
+            <div class="contact__field">
+              <label for="name" class="contact__label">Name</label>
+              <input
+                id="name"
+                type="text"
+                formControlName="name"
+                class="contact__input"
+                placeholder="Jane Doe"
+              />
+            </div>
+            <div class="contact__field">
+              <label for="email" class="contact__label">Email</label>
+              <input
+                id="email"
+                type="email"
+                formControlName="email"
+                class="contact__input"
+                placeholder="jane@company.com"
+              />
+            </div>
+          </div>
+
+          <div class="contact__field">
+            <label for="industry" class="contact__label">Industry</label>
+            <select id="industry" formControlName="industry" class="contact__select">
+              <option value="" disabled>Select an industry</option>
+              @for (industry of industries; track industry) {
+                <option [value]="industry">{{ industry }}</option>
+              }
+            </select>
+          </div>
+
+          <div class="contact__field">
+            <label for="message" class="contact__label">Message</label>
+            <textarea
+              id="message"
+              formControlName="message"
+              class="contact__textarea"
+              placeholder="How can we help you?"
+              rows="5"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="contact__submit" [disabled]="contactForm.invalid">
+            Submit Request
+          </button>
+        </form>
+      </div>
+
+      <!-- Right Side Info -->
+      <div class="contact__info">
+        <!-- Global Office -->
+        <div class="contact__office">
+          <h3 class="contact__office-title">
+            <span class="material-symbols-outlined">location_on</span>
+            Global Office
+          </h3>
+          <div class="contact__map">
+            <img
+              ngSrc="AB6AXuBLvrb6ZaLH1nnHZ9406dE47TGHHAoilsRgM378YA-gq4LIDL01invpCFiNllKUXZyQ1RJGeCukHVziyA6DyR3O9ffr_Ca2aUwSaz3sEfN3a78vr4o7Px2c4ruwh-ZT_RUnoJ_nGaCQ7LQEgjK8pA-xDBcEZYVaQckqpSboBGL05FYtp9uzXbsVEHxFUGCE1ABZM5rpl7QGquiKOsZ1dd3ApjLu8dgvU1jJKXyyN5xcoqmKHJlfvhPj3q4WJN42x5Bj7jnYq2fFY5cY"
+              width="400"
+              height="192"
+              alt="Map of Salvador"
+              class="contact__map-img"
+            />
+            <div class="contact__map-overlay"></div>
+          </div>
+          <address class="contact__address">
+            <strong>Salvador Operations Center</strong><br />
+            Av. Tancredo Neves, 1234<br />
+            Caminho das Árvores<br />
+            Salvador - BA, 41820-020<br />
+            Brazil
+          </address>
+          <a href="mailto:contact@insighttech.com" class="contact__email">
+            <span class="material-symbols-outlined">mail</span>
+            contact@insighttech.com
+          </a>
+        </div>
+
+        <!-- Opportunities -->
+        <div class="contact__opportunities">
+          @for (opp of opportunities; track opp.title) {
+            <div class="contact__opp-card">
+              <span class="contact__opp-label">{{ opp.label }}</span>
+              <h4 class="contact__opp-title">{{ opp.title }}</h4>
+              <p class="contact__opp-desc">{{ opp.description }}</p>
+              <a [routerLink]="opp.link" class="contact__opp-link">
+                {{ opp.linkText }} <span class="material-symbols-outlined">arrow_forward</span>
+              </a>
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

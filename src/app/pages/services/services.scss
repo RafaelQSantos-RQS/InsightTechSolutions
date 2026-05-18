@@ -1,0 +1,165 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+// ==========================================================================
+// HERO SECTION
+// ==========================================================================
+
+.services-hero {
+  padding: $spacing-section-gap 0 48px;
+
+  &__container {
+    @include container;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $spacing-gutter;
+    align-items: center;
+
+    @include tablet-up {
+      grid-template-columns: 7fr 5fr;
+    }
+  }
+
+  &__badge {
+    display: inline-block;
+    background-color: $color-surface-container-high;
+    color: $color-on-surface;
+    @include text-label-caps;
+    padding: 8px 12px;
+    border-radius: $radius-full;
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    @include text-display-lg;
+    color: $color-ink-deep;
+    margin-bottom: 24px;
+  }
+
+  &__description {
+    @include text-body-md;
+    color: $color-on-surface-variant;
+    max-width: 600px;
+  }
+
+  &__image {
+    display: none;
+    border-radius: $radius-lg;
+    overflow: hidden;
+    border: 1px solid $color-border-muted;
+    background-color: $color-surface-container-lowest;
+    height: 256px;
+
+    @include tablet-up {
+      display: block;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+// ==========================================================================
+// SERVICES GRID
+// ==========================================================================
+
+.services-grid {
+  padding-bottom: $spacing-section-gap;
+
+  &__container {
+    @include container;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $spacing-gutter;
+
+    @include tablet-up {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+.service-card {
+  @include card-base;
+  @include card-hover;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &__header {
+    border-bottom: 1px solid $color-border-muted;
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+  }
+
+  &__icon {
+    width: 48px;
+    height: 48px;
+    border-radius: $radius-default;
+    background-color: $color-surface-container;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+
+    .material-symbols-outlined {
+      color: $color-secondary;
+      font-variation-settings: 'FILL' 1;
+    }
+  }
+
+  &__title {
+    @include text-headline-lg-mobile;
+    color: $color-ink-deep;
+
+    @include tablet-up {
+      font-size: $font-size-headline-lg;
+      line-height: $line-height-headline-lg;
+    }
+  }
+
+  &__description {
+    @include text-body-md;
+    color: $color-on-surface-variant;
+    margin-bottom: 24px;
+    flex-grow: 1;
+  }
+
+  &__benefits {
+    margin-top: auto;
+  }
+
+  &__benefits-title {
+    @include text-label-caps;
+    color: $color-on-surface-variant;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    @include text-body-sm;
+    color: $color-on-surface;
+  }
+
+  &__check {
+    color: $color-secondary;
+    font-size: 18px;
+    margin-top: 2px;
+  }
+}

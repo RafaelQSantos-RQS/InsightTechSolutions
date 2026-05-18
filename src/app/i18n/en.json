@@ -1,0 +1,297 @@
+{
+  "common": {
+    "getStarted": "Get Started",
+    "explore": "Explore Capabilities",
+    "viewDetails": "View Details",
+    "learnMore": "Learn More"
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "caseStudies": "Case Studies",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "signalProcessing": "Signal Processing",
+      "badge": "Data-Driven Intelligence",
+      "title": "Transforming Data into Strategic Knowledge.",
+      "description": "At InsightTech Solutions, we specialize in comprehensive data engineering, analytics, and business intelligence. We empower organizations to transcend intuition, enabling assertive decision-making through rigorous, high-quality data analysis tailored to unique institutional structures."
+    },
+    "expertise": {
+      "title": "Our Expertise",
+      "subtitle": "A robust, scalable approach to data intelligence. We provide an end-to-end ecosystem designed for C-suite strategic clarity.",
+      "dataEngineering": {
+        "title": "Data Engineering",
+        "description": "Developing robust architectures encompassing the full lifecycle of data handling—from collection and storage to transformation and structuring. We ensure high availability, security, and performance for complex datasets.",
+        "tags": ["Pipeline Design", "Warehousing", "ETL"]
+      },
+      "dataScience": {
+        "title": "Data Science",
+        "description": "Applying advanced analytical techniques and machine learning models to extract deep insights, identify hidden patterns, and construct predictive scenarios.",
+        "link": "View Methodologies"
+      },
+      "bi": {
+        "title": "Business Intelligence",
+        "badge": "Core Capability",
+        "description": "Translating complex technical analyses into strategic intelligence. We construct intuitive, real-time dashboards and comprehensive reports tailored to specific management indicators."
+      },
+      "tailored": {
+        "title": "Tailored Systems",
+        "description": "Every organization has a unique DNA. We do not rely solely on off-the-shelf tools; instead, we build bespoke analytical ecosystems that align perfectly with your internal processes."
+      }
+    },
+    "values": {
+      "title": "Our Values & Commitment",
+      "subtitle": "We build partnerships grounded in trust, rigorous methodology, and a commitment to transformative outcomes.",
+      "excellence": {
+        "title": "Excellence",
+        "description": "We pursue the highest technical standards in every project, ensuring robust architectures and precise analytical outputs that withstand rigorous scrutiny."
+      },
+      "ethics": {
+        "title": "Ethics & Privacy",
+        "description": "Operating with absolute transparency and integrity. We implement stringent security protocols to safeguard sensitive information and ensure compliance."
+      },
+      "innovation": {
+        "title": "Continuous Innovation",
+        "description": "Remaining at the forefront of technological advancement. We proactively integrate novel methodologies to enhance analytical capabilities and client value."
+      }
+    }
+  },
+  "services": {
+    "hero": {
+      "badge": "CORE OFFERINGS",
+      "title": "Architecting Intelligence from Complex Data Streams",
+      "description": "We deliver end-to-end data capabilities engineered for enterprise scale. From robust foundational pipelines to predictive modeling and executive dashboards, our suite of services is designed to transform raw information into institutional clarity and strategic advantage."
+    },
+    "dataEngineering": {
+      "title": "Data Engineering",
+      "description": "Design and implementation of scalable, automated data pipelines and ETL processes. We establish the robust architectural foundation necessary to ensure your data is clean, accessible, and primed for advanced analytics.",
+      "benefits": "Core Benefits",
+      "items": ["Scalable Pipeline Architecture", "Cloud-Native Solutions", "Real-Time Data Integration"]
+    },
+    "dataScience": {
+      "title": "Data Science & ML",
+      "description": "Deployment of advanced predictive modeling and machine learning algorithms. We move beyond historical reporting to forecast trends, optimize complex processes, and uncover hidden patterns within your datasets.",
+      "benefits": "Core Benefits",
+      "items": ["Predictive Analytics", "Machine Learning Models", "Pattern Recognition"]
+    },
+    "dataAnalysis": {
+      "title": "Data Analysis",
+      "description": "Creation of intuitive, high-fidelity dashboards and comprehensive reporting structures. We distill complex metrics into clear visual narratives designed specifically for executive decision-making and operational oversight.",
+      "benefits": "Core Benefits",
+      "items": ["Executive Dashboards", "Custom Reporting", "KPI Tracking"]
+    },
+    "consulting": {
+      "title": "Strategic Consulting",
+      "description": "Expert advisory services to align your data initiatives with overarching business objectives. We conduct maturity assessments, define technology roadmaps, and establish data governance frameworks to ensure long-term ROI.",
+      "benefits": "Core Benefits",
+      "items": ["Technology Roadmaps", "Data Governance", "Maturity Assessments"]
+    }
+  },
+  "caseStudies": {
+    "header": {
+      "title": "Driving Global Results",
+      "description": "Discover how InsightTech Solutions leverages advanced data analytics to solve complex challenges across Healthcare, Finance, and Industry. Our proprietary methodologies transform raw data into actionable intelligence."
+    },
+    "healthcare": {
+      "category": "Healthcare",
+      "title": "Predictive Patient Care",
+      "problem": "Problem:",
+      "problemText": "High readmission rates due to delayed post-operative monitoring data analysis.",
+      "solution": "Solution:",
+      "solutionText": "Implemented a real-time predictive analytics engine reducing readmissions by 22%."
+    },
+    "finance": {
+      "category": "Finance",
+      "title": "Algorithmic Risk Mitigation",
+      "problem": "Problem:",
+      "problemText": "Legacy systems failing to identify micro-fluctuations in volatile market segments.",
+      "solution": "Solution:",
+      "solutionText": "Deployed an AI-driven risk assessment model, protecting $4.2B in assets under management."
+    },
+    "industry": {
+      "category": "Industry",
+      "title": "Supply Chain Optimization",
+      "problem": "Problem:",
+      "problemText": "Inefficient logistics routing causing a 15% increase in annual operational costs.",
+      "solution": "Solution:",
+      "solutionText": "Integrated IoT tracking with machine learning to optimize global fleet movements."
+    },
+    "expansion": {
+      "label": "FUTURE OUTLOOK",
+      "title": "Global Expansion Goals",
+      "description": "InsightTech Solutions is committed to bringing premier data intelligence to global markets. As outlined in our strategic roadmap, we are actively scaling our infrastructure to establish a strong operational presence in 15 countries by 2031.",
+      "countries": "Target Countries",
+      "year": "Target Year"
+    }
+  },
+  "contact": {
+    "header": {
+      "title": "Let's Connect",
+      "description": "Whether you're looking to transform your data infrastructure, explore partnership opportunities, or join our growing team of analytical experts, we're ready to start the conversation."
+    },
+    "form": {
+      "title": "Send us a message",
+      "name": "Name",
+      "namePlaceholder": "Jane Doe",
+      "email": "Email",
+      "emailPlaceholder": "jane@company.com",
+      "industry": "Industry",
+      "industrySelect": "Select an industry",
+      "message": "Message",
+      "messagePlaceholder": "How can we help you?",
+      "submit": "Submit Request"
+    },
+    "office": {
+      "title": "Global Office",
+      "address": "Salvador Operations Center",
+      "street": "Av. Tancredo Neves, 1234",
+      "neighborhood": "Caminho das Árvores",
+      "city": "Salvador - BA, 41820-020",
+      "country": "Brazil",
+      "email": "contact@insighttech.com"
+    },
+    "partnerships": {
+      "label": "Collaborate",
+      "title": "Partnerships",
+      "description": "We actively seek strategic alliances with complementary technology providers to deliver comprehensive intelligence solutions.",
+      "link": "Explore Partner Program"
+    },
+    "careers": {
+      "label": "Join Us",
+      "title": "Careers",
+      "description": "Build the future of business intelligence. We're looking for analytical minds and creative problem solvers.",
+      "link": "View Open Positions"
+    }
+  },
+  "footer": {
+    "brand": "InsightTech",
+    "tagline": "Transforming data into strategic knowledge for institutional excellence.",
+    "legal": "Legal",
+    "connect": "Connect",
+    "copyright": "InsightTech Solutions. All rights reserved."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "effective": "Effective Date: January 1, 2025",
+    "sections": {
+      "intro": {
+        "title": "1. Introduction",
+        "text": "InsightTech Solutions (\"we,\" \"our,\" or \"us\") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services."
+      },
+      "collect": {
+        "title": "2. Information We Collect",
+        "text": "We may collect personal information that you voluntarily provide to us when you:",
+        "items": ["Register on the Website", "Express an interest in obtaining information about us or our products and services", "Participate in activities on the Website", "Contact us"],
+        "after": "The personal information that we collect depends on the context of your interactions with us and the Website, the choices you make, and the products and features you use."
+      },
+      "use": {
+        "title": "3. How We Use Your Information",
+        "text": "We use personal information collected via our Website for a variety of business purposes described below. We process your personal information for these purposes in reliance on our legitimate business interests, in order to enter into or perform a contract with you, with your consent, and/or for compliance with our legal obligations.",
+        "items": ["To facilitate account creation and logon management", "To send administrative information to you", "To fulfill and manage your orders", "To post testimonials with your consent", "To request feedback", "To protect our Services"]
+      },
+      "share": {
+        "title": "4. Sharing Your Information",
+        "text": "We only share information with the following third parties:",
+        "items": ["Cloud Computing Services (AWS, Azure, Google Cloud)", "Data Analytics Services", "Communication & Collaboration Tools"]
+      },
+      "security": {
+        "title": "5. Data Security",
+        "text": "We have implemented appropriate technical and organizational security measures designed to protect the security of any personal information we process. However, despite our safeguards and efforts to secure your information, no electronic transmission over the Internet or information storage technology can be guaranteed to be 100% secure."
+      },
+      "rights": {
+        "title": "6. Your Rights",
+        "text": "Under applicable data protection laws, you have the right to:",
+        "items": ["Request access to your personal data", "Request correction or deletion of your personal data", "Object to processing of your personal data", "Request restriction of processing your personal data", "Request transfer of your personal data", "Withdraw your consent"]
+      },
+      "contact": {
+        "title": "7. Contact Us",
+        "text": "If you have questions or comments about this policy, you may email us at contact@insighttech.com."
+      }
+    }
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "effective": "Effective Date: January 1, 2025",
+    "sections": {
+      "agreement": {
+        "title": "1. Agreement to Terms",
+        "text": "By accessing or using our website and services, you agree to be bound by these Terms of Service. If you disagree with any part of these terms, then you may not access our services."
+      },
+      "intellectual": {
+        "title": "2. Intellectual Property",
+        "text": "The Service and its original content, features, and functionality are and will remain the exclusive property of InsightTech Solutions and its licensors. The Service is protected by copyright, trademark, and other laws of both the Brazil and foreign countries."
+      },
+      "accounts": {
+        "title": "3. User Accounts",
+        "text": "When you create an account with us, you must provide us information that is accurate, complete, and current at all times. Failure to do so constitutes a breach of the Terms, which may result in immediate termination of your account on our Service."
+      },
+      "content": {
+        "title": "4. User Content",
+        "text": "Our Service allows you to post, link, store, share and otherwise make available certain information, text, graphics, videos, or other material (\"Content\"). You are responsible for the Content that you post to the Service, including its legality, reliability, and appropriateness."
+      },
+      "termination": {
+        "title": "5. Termination",
+        "text": "We may terminate or suspend your account immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms. Upon termination, your right to use the Service will immediately cease."
+      },
+      "liability": {
+        "title": "6. Limitation of Liability",
+        "text": "In no event shall InsightTech Solutions, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of or inability to access or use the Service."
+      },
+      "governing": {
+        "title": "7. Governing Law",
+        "text": "These Terms shall be governed and construed in accordance with the laws of Brazil, without regard to its conflict of law provisions. Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights."
+      },
+      "changes": {
+        "title": "8. Changes to Terms",
+        "text": "We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will try to provide at least 30 days' notice prior to any new terms taking effect."
+      },
+      "contact": {
+        "title": "9. Contact Us",
+        "text": "If you have any questions about these Terms, please contact us at contact@insighttech.com."
+      }
+    }
+  },
+  "cookie": {
+    "title": "Cookie Policy",
+    "effective": "Effective Date: January 1, 2025",
+    "sections": {
+      "what": {
+        "title": "1. What Are Cookies",
+        "text": "Cookies are small pieces of text sent to your web browser by a website you visit. A cookie file is stored in your web browser and allows the Service or a third-party to recognize you and make your next visit easier and the Service more useful to you."
+      },
+      "how": {
+        "title": "2. How InsightTech Solutions Uses Cookies",
+        "text": "When you use and access the Service, we may place a number of cookie files in your web browser. We use cookies for the following purposes:",
+        "items": ["Essential Cookies: To enable certain functions of the Service", "Analytics Cookies: To help us understand how the Service is being used", "Preference Cookies: To remember your settings and preferences", "Security Cookies: For security purposes"]
+      },
+      "thirdParty": {
+        "title": "3. Third-Party Cookies",
+        "text": "In addition to our own cookies, we may also use various third-party cookies to report usage statistics of the Service, deliver advertisements on and through the Service, and so on. These cookies may track your browsing history across websites."
+      },
+      "table": {
+        "title": "4. What Cookies We Use",
+        "headers": {
+          "type": "Cookie Type",
+          "purpose": "Purpose",
+          "duration": "Duration"
+        },
+        "rows": [
+          { "type": "session_id", "purpose": "User session management", "duration": "Session" },
+          { "type": "preferences", "purpose": "Remember user settings", "duration": "1 year" },
+          { "type": "_ga", "purpose": "Google Analytics - Page visits", "duration": "2 years" },
+          { "type": "_gid", "purpose": "Google Analytics - User identification", "duration": "24 hours" }
+        ]
+      },
+      "choices": {
+        "title": "5. Your Choices Regarding Cookies",
+        "text": "If you'd like to delete cookies or instruct your web browser to delete or refuse cookies, please visit the help pages of your web browser. Please note, however, that if you delete cookies or refuse to accept them, you might not be able to use all of the features we offer."
+      },
+      "contact": {
+        "title": "6. Contact Us",
+        "text": "If you have any questions about this Cookie Policy, please contact us at contact@insighttech.com."
+      }
+    }
+  }
+}

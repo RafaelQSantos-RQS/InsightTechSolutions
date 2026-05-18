@@ -1,1 +1,180 @@
-/* You can add global styles to this file, and also import other style files */
+@use './app/styles/variables' as *;
+@use './app/styles/mixins' as *;
+
+// Google Fonts Import
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&family=Metropolis:wght@600;700&family=Open+Sans:wght@400;600&display=swap');
+
+// Material Symbols
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+
+// CSS Custom Properties for global use
+:root {
+  // Colors
+  --color-surface: #{$color-surface};
+  --color-surface-slate: #{$color-surface-slate};
+  --color-surface-container-lowest: #{$color-surface-container-lowest};
+  --color-surface-container: #{$color-surface-container};
+  --color-surface-container-high: #{$color-surface-container-high};
+
+  --color-on-surface: #{$color-on-surface};
+  --color-on-surface-variant: #{$color-on-surface-variant};
+  --color-ink-deep: #{$color-ink-deep};
+
+  --color-primary: #{$color-primary};
+  --color-on-primary: #{$color-on-primary};
+  --color-secondary: #{$color-secondary};
+  --color-on-secondary: #{$color-on-secondary};
+
+  --color-border-muted: #{$color-border-muted};
+  --color-data-cyan: #{$color-data-cyan};
+  --color-cta-orange: #{$color-cta-orange};
+
+  // Spacing
+  --spacing-base: #{$spacing-base};
+  --spacing-gutter: #{$spacing-gutter};
+  --spacing-margin-mobile: #{$spacing-margin-mobile};
+  --spacing-margin-desktop: #{$spacing-margin-desktop};
+  --spacing-section-gap: #{$spacing-section-gap};
+  --spacing-container-max: #{$spacing-container-max};
+
+  // Typography
+  --font-family-display: #{$font-family-display};
+  --font-family-body: #{$font-family-body};
+  --font-family-mono: #{$font-family-mono};
+
+  // Border Radius
+  --radius-default: #{$radius-default};
+  --radius-lg: #{$radius-lg};
+  --radius-full: #{$radius-full};
+}
+
+// Reset & Base Styles
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-family-body;
+  font-size: $font-size-body-md;
+  line-height: $line-height-body-md;
+  color: $color-on-surface;
+  background-color: $color-surface-slate;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+// Typography Classes
+.text-display-lg {
+  font-family: $font-family-display;
+  font-size: $font-size-display-lg;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-display-lg;
+  letter-spacing: $letter-spacing-display-lg;
+}
+
+.text-headline-lg {
+  font-family: $font-family-display;
+  font-size: $font-size-headline-lg;
+  font-weight: $font-weight-semibold;
+  line-height: $line-height-headline-lg;
+
+  @include mobile {
+    font-size: $font-size-headline-lg-mobile;
+    line-height: $line-height-headline-lg-mobile;
+  }
+}
+
+.text-headline-lg-mobile {
+  font-family: $font-family-display;
+  font-size: $font-size-headline-lg-mobile;
+  font-weight: $font-weight-semibold;
+  line-height: $line-height-headline-lg-mobile;
+}
+
+.text-body-md {
+  font-family: $font-family-body;
+  font-size: $font-size-body-md;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-body-md;
+}
+
+.text-body-sm {
+  font-family: $font-family-body;
+  font-size: $font-size-body-sm;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-body-sm;
+}
+
+.text-label-caps {
+  font-family: $font-family-mono;
+  font-size: $font-size-label-caps;
+  font-weight: $font-weight-medium;
+  line-height: $line-height-label-caps;
+  letter-spacing: $letter-spacing-label-caps;
+}
+
+// Links
+a {
+  color: $color-secondary;
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+// Container Utility
+.container {
+  @include container;
+}
+
+// Material Symbols
+.material-symbols-outlined {
+  font-variation-settings: 'FIL' 0;
+  font-size: 24px;
+  line-height: 1;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+// Focus visible for accessibility
+:focus-visible {
+  outline: 2px solid $color-secondary;
+  outline-offset: 2px;
+}
+
+// Selection
+::selection {
+  background-color: $color-secondary;
+  color: $color-on-secondary;
+}
+
+// Scrollbar
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: $color-surface;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $color-border-muted;
+  border-radius: 4px;
+
+  &:hover {
+    background: $color-outline-variant;
+  }
+}

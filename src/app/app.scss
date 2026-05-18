@@ -1,0 +1,12 @@
+@use './styles/variables' as *;
+
+:host {
+  display: block;
+  min-height: 100vh;
+}
+
+.main-content {
+  min-height: calc(100vh - 80px - 280px);
+  display: flex;
+  flex-direction: column;
+}

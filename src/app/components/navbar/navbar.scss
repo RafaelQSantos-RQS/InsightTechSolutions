@@ -1,0 +1,137 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: $z-index-sticky;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid $color-border-muted;
+  transition: all 0.2s ease-in-out;
+
+  &__container {
+    @include container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: $font-family-display;
+    font-size: $font-size-headline-lg-mobile;
+    font-weight: $font-weight-bold;
+    color: $color-ink-deep;
+    text-decoration: none;
+
+    @include tablet-up {
+      font-size: $font-size-headline-lg;
+    }
+
+    &-icon {
+      color: $color-secondary;
+      font-variation-settings: 'FILL' 1;
+    }
+  }
+
+  &__nav {
+    display: none;
+    align-items: center;
+    gap: 32px;
+
+    @include tablet-up {
+      display: flex;
+    }
+  }
+
+  &__link {
+    @include text-body-md;
+    color: $color-on-surface-variant;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+
+    &:hover {
+      color: $color-secondary;
+      opacity: 0.9;
+    }
+
+    &--active {
+      color: $color-secondary;
+      font-weight: $font-weight-bold;
+      border-bottom-color: $color-secondary;
+    }
+  }
+
+  &__cta {
+    display: none;
+    @include button-base;
+    background-color: $color-cta-orange;
+    color: $color-on-primary;
+    padding: 10px 24px;
+    border-radius: $radius-default;
+
+    @include tablet-up {
+      display: inline-flex;
+    }
+
+    &:hover {
+      background-color: #c2410c;
+    }
+  }
+
+  &__mobile-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    color: $color-on-surface;
+
+    @include tablet-up {
+      display: none;
+    }
+  }
+}
+
+@include mobile {
+  .navbar {
+    &__nav {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      right: 0;
+      background-color: $color-surface-container-lowest;
+      padding: 24px;
+      gap: 16px;
+      border-bottom: 1px solid $color-border-muted;
+      box-shadow: $shadow-level-1;
+      transform: translateY(-100%);
+      opacity: 0;
+      visibility: hidden;
+      transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+
+      &--open {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    &__link {
+      padding: 8px 0;
+      border-bottom: none;
+    }
+  }
+}

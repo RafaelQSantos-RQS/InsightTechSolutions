@@ -1,0 +1,98 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.footer {
+  width: 100%;
+  padding: $spacing-section-gap 0;
+  background-color: $color-surface-slate;
+  border-top: 1px solid $color-border-muted;
+  transition: all 0.2s ease-in-out;
+
+  &__container {
+    @include container;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $spacing-gutter;
+
+    @include tablet-up {
+      grid-template-columns: 2fr 1fr 1fr;
+    }
+  }
+
+  &__brand {
+    grid-column: 1 / -1;
+
+    @include tablet-up {
+      grid-column: 1;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: $font-family-display;
+    font-size: $font-size-headline-lg-mobile;
+    font-weight: $font-weight-bold;
+    color: $color-ink-deep;
+    margin-bottom: 16px;
+
+    @include tablet-up {
+      font-size: $font-size-headline-lg;
+    }
+
+    &-icon {
+      color: $color-secondary;
+      font-variation-settings: 'FILL' 1;
+    }
+  }
+
+  &__tagline {
+    @include text-body-sm;
+    color: $color-on-surface-variant;
+    margin-bottom: 24px;
+    max-width: 300px;
+  }
+
+  &__copyright {
+    @include text-body-sm;
+    color: $color-on-surface-variant;
+  }
+
+  &__heading {
+    @include text-label-caps;
+    color: $color-ink-deep;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__link {
+    @include text-body-sm;
+    color: $color-on-surface-variant;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    &:hover {
+      color: $color-primary;
+      text-decoration: underline;
+    }
+
+    .material-symbols-outlined {
+      font-size: 18px;
+    }
+
+    &--icon {
+      gap: 8px;
+    }
+  }
+}

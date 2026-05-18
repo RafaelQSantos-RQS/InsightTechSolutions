@@ -1,0 +1,291 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.contact {
+  padding: $spacing-section-gap 0;
+  flex-grow: 1;
+
+  &__container {
+    @include container;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $spacing-gutter;
+
+    @include tablet-up {
+      grid-template-columns: 12fr;
+    }
+  }
+
+  &__header {
+    grid-column: 1 / -1;
+    margin-bottom: 48px;
+  }
+
+  &__title {
+    @include text-display-lg;
+    color: $color-ink-deep;
+    margin-bottom: 16px;
+  }
+
+  &__description {
+    @include text-body-md;
+    color: $color-on-surface-variant;
+    max-width: 600px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $spacing-gutter;
+
+    @include tablet-up {
+      grid-template-columns: 7fr 5fr;
+    }
+  }
+
+  // Form
+  &__form-wrapper {
+    background-color: $color-surface-container-lowest;
+    border: 1px solid $color-border-muted;
+    border-radius: $radius-default;
+    padding: 32px;
+    height: fit-content;
+  }
+
+  &__form-title {
+    @include text-headline-lg;
+    color: $color-ink-deep;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid $color-border-muted;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__form-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+
+    @include tablet-up {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label {
+    @include text-label-caps;
+    color: $color-on-surface-variant;
+    margin-bottom: 8px;
+  }
+
+  &__input,
+  &__select,
+  &__textarea {
+    background-color: $color-surface-slate;
+    border: 1px solid $color-border-muted;
+    border-radius: $radius-default;
+    padding: 12px 16px;
+    font-family: $font-family-body;
+    font-size: $font-size-body-md;
+    color: $color-on-surface;
+    transition: border-color 0.2s ease, border-width 0.2s ease;
+
+    &:focus {
+      outline: none;
+      border-color: $color-secondary;
+      border-width: 2px;
+    }
+
+    &::placeholder {
+      color: $color-on-surface-variant;
+    }
+  }
+
+  &__select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2343474c' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px;
+    padding-right: 40px;
+  }
+
+  &__textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+
+  &__submit {
+    background-color: $color-cta-orange;
+    color: $color-on-primary;
+    padding: 12px 32px;
+    border-radius: $radius-default;
+    font-family: $font-family-mono;
+    font-size: $font-size-label-caps;
+    font-weight: $font-weight-medium;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 100%;
+
+    @include tablet-up {
+      width: auto;
+    }
+
+    &:hover:not(:disabled) {
+      filter: brightness(0.9);
+    }
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+  }
+
+  // Info Side
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__office {
+    background-color: $color-surface-container-lowest;
+    border: 1px solid $color-border-muted;
+    border-radius: $radius-default;
+    padding: 32px;
+  }
+
+  &__office-title {
+    @include text-headline-lg;
+    color: $color-ink-deep;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+
+    .material-symbols-outlined {
+      color: $color-secondary;
+    }
+  }
+
+  &__map {
+    position: relative;
+    height: 192px;
+    border-radius: $radius-default;
+    overflow: hidden;
+    border: 1px solid $color-border-muted;
+    margin-bottom: 24px;
+    background-color: $color-surface-slate;
+  }
+
+  &__map-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    mix-blend-mode: multiply;
+  }
+
+  &__map-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba($color-ink-deep, 0.2) 0%, transparent 50%);
+    pointer-events: none;
+  }
+
+  &__address {
+    font-style: normal;
+    @include text-body-md;
+    color: $color-on-surface-variant;
+    line-height: 1.8;
+    margin-bottom: 16px;
+
+    strong {
+      color: $color-on-surface;
+    }
+  }
+
+  &__email {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    @include text-body-md;
+    color: $color-secondary;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    .material-symbols-outlined {
+      font-size: 18px;
+    }
+  }
+
+  // Opportunities
+  &__opportunities {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__opp-card {
+    background-color: $color-surface-container-lowest;
+    border: 1px solid $color-border-muted;
+    border-radius: $radius-default;
+    padding: 24px;
+    transition: box-shadow 0.2s ease;
+
+    &:hover {
+      box-shadow: 0 12px 24px -12px rgba(0, 0, 0, 0.04);
+    }
+  }
+
+  &__opp-label {
+    @include text-label-caps;
+    color: $color-on-surface-variant;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  &__opp-title {
+    @include text-headline-lg-mobile;
+    color: $color-ink-deep;
+    margin-bottom: 12px;
+  }
+
+  &__opp-desc {
+    @include text-body-sm;
+    color: $color-on-surface-variant;
+    margin-bottom: 16px;
+  }
+
+  &__opp-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    @include text-label-caps;
+    color: $color-secondary;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    .material-symbols-outlined {
+      font-size: 16px;
+    }
+  }
+}

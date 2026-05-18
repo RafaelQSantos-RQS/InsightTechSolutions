@@ -1,0 +1,23 @@
+<header class="navbar">
+  <div class="navbar__container">
+    <a routerLink="/" class="navbar__logo">
+      <span class="material-symbols-outlined navbar__logo-icon">insights</span>
+      InsightTech Solutions
+    </a>
+
+    <nav class="navbar__nav" [class.navbar__nav--open]="isMenuOpen()">
+      <a routerLink="/" routerLinkActive="navbar__link--active" [routerLinkActiveOptions]="{ exact: true }" class="navbar__link">Home</a>
+      <a routerLink="/services" routerLinkActive="navbar__link--active" class="navbar__link">Services</a>
+      <a routerLink="/case-studies" routerLinkActive="navbar__link--active" class="navbar__link">Case Studies</a>
+      <a routerLink="/contact" routerLinkActive="navbar__link--active" class="navbar__link">Contact</a>
+    </nav>
+
+    <button class="navbar__cta" routerLink="/contact">
+      Get Started
+    </button>
+
+    <button class="navbar__mobile-toggle" (click)="toggleMenu()" aria-label="Toggle menu" [attr.aria-expanded]="isMenuOpen()">
+      <span class="material-symbols-outlined">{{ isMenuOpen() ? 'close' : 'menu' }}</span>
+    </button>
+  </div>
+</header>
