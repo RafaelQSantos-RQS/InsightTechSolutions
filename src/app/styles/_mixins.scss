@@ -107,6 +107,13 @@
   letter-spacing: $letter-spacing-display-lg;
 }
 
+@mixin text-headline-sm {
+  font-family: $font-family-display;
+  font-size: $font-size-headline-sm;
+  font-weight: $font-weight-semibold;
+  line-height: $line-height-headline-sm;
+}
+
 @mixin text-headline-lg {
   font-family: $font-family-display;
   font-size: $font-size-headline-lg;
