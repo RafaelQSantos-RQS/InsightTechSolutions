@@ -1,13 +1,12 @@
 import { Component, ChangeDetectionStrategy, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { NgOptimizedImage } from '@angular/common';
 import { TranslatePipe } from '../../pipes/translate-pipe';
 import { LanguageService } from '../../services/language';
 
 @Component({
   selector: 'app-contact',
-  imports: [RouterLink, ReactiveFormsModule, NgOptimizedImage, TranslatePipe],
+  imports: [RouterLink, ReactiveFormsModule, TranslatePipe],
   templateUrl: './contact.html',
   styleUrl: './contact.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -24,14 +23,14 @@ export class Contact {
       labelKey: 'contact.partnerships.label',
       titleKey: 'contact.partnerships.title',
       descriptionKey: 'contact.partnerships.description',
-      link: '/contact',
+      link: '/partner-program',
       linkTextKey: 'contact.partnerships.link',
     },
     {
       labelKey: 'contact.careers.label',
       titleKey: 'contact.careers.title',
       descriptionKey: 'contact.careers.description',
-      link: '/contact',
+      link: '/careers',
       linkTextKey: 'contact.careers.link',
     },
   ];

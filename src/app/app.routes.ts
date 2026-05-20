@@ -8,6 +8,12 @@ export const routes: Routes = [
     title: 'InsightTech Solutions - Transforming Data into Strategic Knowledge',
   },
   {
+    path: 'about',
+    loadComponent: () =>
+      import('./pages/about/about').then((m) => m.About),
+    title: 'About - InsightTech Solutions',
+  },
+  {
     path: 'services',
     loadComponent: () =>
       import('./pages/services/services').then((m) => m.Services),
@@ -42,6 +48,18 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./pages/cookie-policy/cookie-policy').then((m) => m.CookiePolicy),
     title: 'Cookie Policy - InsightTech Solutions',
+  },
+  {
+    path: 'partner-program',
+    loadComponent: () =>
+      import('./pages/partner-program/partner-program').then((m) => m.PartnerProgram),
+    title: 'Partner Program - InsightTech Solutions',
+  },
+  {
+    path: 'careers',
+    loadComponent: () =>
+      import('./pages/careers/careers').then((m) => m.Careers),
+    title: 'Careers - InsightTech Solutions',
   },
   {
     path: '**',

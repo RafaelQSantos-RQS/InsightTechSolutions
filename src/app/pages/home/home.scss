@@ -282,6 +282,14 @@
       @include tablet-up {
         grid-column: span 4;
       }
+
+      .expertise__card-title {
+        color: $color-on-primary;
+      }
+
+      .expertise__card-description {
+        color: rgba($color-on-primary, 0.8);
+      }
     }
 
     &-icon {
