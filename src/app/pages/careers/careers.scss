@@ -1,0 +1,321 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.careers-hero {
+    background: $color-surface-slate;
+    padding: 100px 0;
+
+    &__container {
+        @include container;
+        text-align: center
+    }
+
+    &__title {
+        @include text-display-lg;
+        color: $color-ink-deep;
+        margin-bottom: 20px
+    }
+
+    &__description {
+        @include text-body-md;
+        color: $color-on-surface-variant;
+        max-width: 800px;
+        margin: 0 auto
+    }
+}
+
+.careers-benefits {
+    padding: 80px 0;
+    background: $color-surface;
+
+    &__container {
+        @include container
+    }
+
+    &__header {
+        text-align: center;
+        margin-bottom: 60px
+    }
+
+    &__title {
+        @include text-display-lg;
+        color: $color-ink-deep
+    }
+
+    &__subtitle {
+        @include text-body-md;
+        color: $color-on-surface-variant;
+        max-width: 600px;
+        margin: 0 auto
+    }
+
+    &__grid {
+        display: grid;
+        gap: 28px;
+
+        @include tablet-up {
+            grid-template-columns: repeat(3, 1fr)
+        }
+    }
+
+    &__item {
+        background: $color-surface-container-lowest;
+        border: 1px solid $color-border-muted;
+        border-radius: $radius-lg;
+        padding: 28px 24px;
+        text-align: center
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        margin: 0 auto 16px;
+        background: $color-secondary-fixed;
+        border-radius: $radius-lg;
+        color: $color-secondary
+    }
+
+    &__item-title {
+        @include text-headline-lg;
+        color: $color-ink-deep;
+        margin-bottom: 8px
+    }
+
+    &__item-text {
+        @include text-body-md;
+        color: $color-on-surface-variant
+    }
+}
+
+.careers-openings {
+    padding: 80px 0;
+    background: $color-surface-container-lowest;
+
+    &__container {
+        @include container
+    }
+
+    &__header {
+        text-align: center;
+        margin-bottom: 60px
+    }
+
+    &__title {
+        @include text-display-lg;
+        color: $color-ink-deep
+    }
+
+    &__subtitle {
+        @include text-body-md;
+        color: $color-on-surface-variant;
+        max-width: 600px;
+        margin: 0 auto
+    }
+
+    &__list {
+        display: grid;
+        gap: 32px;
+        max-width: 900px;
+        margin: 0 auto
+    }
+
+    &__job {
+        background: $color-surface;
+        border: 1px solid $color-border-muted;
+        border-radius: $radius-lg;
+        padding: 32px
+    }
+
+    &__job-header {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 12px
+    }
+
+    &__job-title {
+        @include text-headline-lg;
+        color: $color-ink-deep;
+        margin: 0
+    }
+
+    &__job-level {
+        padding: 4px 10px;
+        background: $color-secondary-fixed;
+        color: $color-secondary;
+        border-radius: $radius-full;
+        @include text-label-caps
+    }
+
+    &__job-meta {
+        display: flex;
+        gap: 24px;
+        margin-bottom: 16px
+    }
+
+    &__job-meta-item {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        @include text-body-sm;
+        color: $color-on-surface-variant;
+
+        span {
+            font-size: 16px;
+            width: 16px;
+            height: 16px
+        }
+    }
+
+    &__job-description {
+        @include text-body-md;
+        color: $color-on-surface-variant;
+        margin-bottom: 20px
+    }
+
+    &__job-skills {
+        margin-bottom: 20px
+    }
+
+    &__job-skills-title {
+        @include text-headline-sm;
+        color: $color-ink-deep;
+        margin-bottom: 10px
+    }
+
+    &__job-skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px
+    }
+
+    &__skill-tag {
+        padding: 4px 10px;
+        background: $color-surface-variant;
+        color: $color-secondary;
+        border-radius: $radius-full;
+        @include text-body-sm
+    }
+
+    &__job-cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        padding: 10px 28px;
+        border-radius: $radius-default;
+        font-family: $font-family-body;
+        font-size: $font-size-body-md;
+        font-weight: $font-weight-semibold;
+        text-decoration: none;
+        background: $color-cta-orange;
+        color: $color-on-primary
+    }
+}
+
+.careers-culture {
+    padding: 80px 0;
+    background: $color-surface;
+
+    &__container {
+        @include container
+    }
+
+    &__header {
+        text-align: center;
+        margin-bottom: 60px
+    }
+
+    &__title {
+        @include text-display-lg;
+        color: $color-ink-deep
+    }
+
+    &__subtitle {
+        @include text-body-md;
+        color: $color-on-surface-variant;
+        max-width: 600px;
+        margin: 0 auto
+    }
+
+    &__values {
+        display: grid;
+        gap: 28px;
+
+        @include tablet-up {
+            grid-template-columns: repeat(4, 1fr)
+        }
+    }
+
+    &__value {
+        background: $color-surface-container-lowest;
+        border: 1px solid $color-border-muted;
+        border-radius: $radius-lg;
+        padding: 28px 20px;
+        text-align: center
+    }
+
+    &__value-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        margin: 0 auto 16px;
+        background: $color-secondary-fixed;
+        border-radius: $radius-lg;
+        color: $color-secondary
+    }
+
+    &__value-title {
+        @include text-headline-sm;
+        color: $color-ink-deep;
+        margin-bottom: 8px
+    }
+
+    &__value-text {
+        @include text-body-sm;
+        color: $color-on-surface-variant
+    }
+}
+
+.careers-cta {
+    padding: 80px 0;
+    background: $color-surface-container-low;
+
+    &__container {
+        @include container;
+        text-align: center
+    }
+
+    &__title {
+        @include text-display-lg;
+        color: $color-ink-deep;
+        margin-bottom: 16px
+    }
+
+    &__description {
+        @include text-body-md;
+        color: $color-on-surface-variant;
+        max-width: 700px;
+        margin: 0 auto 32px
+    }
+
+    &__button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        padding: 12px 32px;
+        border-radius: $radius-default;
+        font-family: $font-family-body;
+        font-size: $font-size-body-md;
+        font-weight: $font-weight-semibold;
+        text-decoration: none;
+        background: $color-cta-orange;
+        color: $color-on-primary
+    }
+}

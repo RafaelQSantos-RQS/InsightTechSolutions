@@ -10,6 +10,8 @@
     "about": "Sobre",
     "services": "Serviços",
     "caseStudies": "Casos de Sucesso",
+    "partners": "Parceiros",
+    "careers": "Carreiras",
     "contact": "Contato"
   },
   "home": {
@@ -368,6 +370,185 @@
         "title": "9. Fale Conosco",
         "text": "Se você tiver alguma dúvida sobre estes Termos, entre em contato conosco em contato@insighttech.com."
       }
+    }
+  },
+  "partner": {
+    "hero": {
+      "title": "Oportunidades de Parceria Estratégica",
+      "description": "Junte-se à InsightTech Solutions na formação do futuro da business intelligence. Estamos construindo um ecossistema de parceiros estratégicos que compartilham nosso compromisso com excelência, inovação e soluções de dados transformadoras."
+    },
+    "overview": {
+      "title": "Categorias de Parceria",
+      "subtitle": "Oferecemos múltiplos modelos de parceria adaptados às forças organizacionais e foco de mercado.",
+      "technology": {
+        "title": "Parceiros de Tecnologia",
+        "description": "Integre suas plataformas e soluções com nossa infraestrutura de análise avançada para entregar inteligência de dados abrangente aos clientes mútuos."
+      },
+      "consulting": {
+        "title": "Parceiros de Consultoria",
+        "description": "Colabore com nossa equipe para entregar serviços de transformação de dados ponta a ponta, aproveitando nossas metodologias e expertise em seus segmentos de mercado."
+      },
+      "research": {
+        "title": "Parceiros de Pesquisa e Acadêmicos",
+        "description": "Parceira com nossa equipe de P&D para avançar pesquisa de ciência de dados de ponta e desenvolver capacidades analíticas de próxima geração."
+      }
+    },
+    "tiers": {
+      "title": "Níveis de Parceria",
+      "subtitle": "Cada nível oferece benefícios distintos, acesso de mercado e modelos de compartilhamento de receita alinhados com seus objetivos de negócios.",
+      "strategic": {
+        "label": "PREMIUM",
+        "title": "Parceiro Estratégico",
+        "description": "Para organizações que buscam integração profunda e co-inovação em soluções de escala empresarial.",
+        "benefits": "Benefícios Principais",
+        "benefit1": "Co-marketing e iniciativas conjuntas de go-to-market",
+        "benefit2": "Compartilhamento de receita em soluções desenvolvidas conjuntamente",
+        "benefit3": "Gerenciador de parceria dedicado e suporte técnico",
+        "benefit4": "Acesso prioritário a novos recursos de produto e programas beta"
+      },
+      "technology": {
+        "label": "CRESCIMENTO",
+        "title": "Parceiro de Tecnologia",
+        "description": "Para plataformas de software e provedores de tecnologia que buscam integração perfeita com nossa plataforma de análise.",
+        "benefits": "Benefícios Principais",
+        "benefit1": "Suporte ao desenvolvimento de integração de API e conectores",
+        "benefit2": "Apresentação de marketing no diretório de parceiros",
+        "benefit3": "Suporte técnico e assistência de integração",
+        "benefit4": "Modelos de preços e licenciamento baseados em volume"
+      },
+      "reseller": {
+        "label": "CRESCIMENTO",
+        "title": "Parceiro Revendedor",
+        "description": "Para firmas de consultoria e provedores de serviços que procuram expandir suas ofertas de análise.",
+        "benefits": "Benefícios Principais",
+        "benefit1": "Margens e níveis de preço competitivos de revenda",
+        "benefit2": "Programas de treinamento e certificação para sua equipe",
+        "benefit3": "Recursos de habilitação de vendas e materiais de marketing",
+        "benefit4": "Programas de registro de negócios e compartilhamento de leads"
+      },
+      "cta": "Iniciar Conversa de Parceria"
+    },
+    "coInnovation": {
+      "title": "Oportunidades de Co-Inovação",
+      "subtitle": "Buscamos ativamente parcerias que ampliem os limites do que é possível em ciência de dados e business intelligence.",
+      "research": {
+        "title": "Colaboração em Pesquisa",
+        "description": "Desenvolvimento conjunto de algoritmos proprietários e metodologias para resolver desafios complexos da indústria. Acesso aos nossos recursos de P&D e liderança de pensamento."
+      },
+      "collaboration": {
+        "title": "Sucesso do Cliente",
+        "description": "Parceria conosco para entregar resultados superiores de cliente. Compartilhe boas práticas, estudos de caso e métricas de sucesso para fortalecer o posicionamento de mercado."
+      },
+      "growth": {
+        "title": "Expansão de Mercado",
+        "description": "Aproveite nossa expertise para expandir para novos verticais ou mercados geográficos. Beneficie-se de inteligência de mercado compartilhada e programas de introdução de clientes."
+      }
+    },
+    "cta": {
+      "title": "Pronto para Construir Algo Extraordinário Juntos?",
+      "description": "Vamos explorar oportunidades de parceria que se alinhem com seus objetivos estratégicos e criem valor duradouro para ambas as organizações.",
+      "button": "Discutir Parceria"
+    }
+  },
+  "careers": {
+    "hero": {
+      "title": "Junte-se à Nossa Missão de Transformar Dados em Conhecimento Estratégico",
+      "description": "Na InsightTech Solutions, estamos construindo o futuro da business intelligence. Procuramos mentes analíticas, solucionadores criativos de problemas e tecnologistas apaixonados que queiram fazer um impacto real."
+    },
+    "benefits": {
+      "title": "Por Que Ingressar na InsightTech Solutions",
+      "subtitle": "Investimos em nosso pessoal, fomentando uma cultura de aprendizado contínuo e crescimento profissional.",
+      "learning": {
+        "title": "Aprendizado Contínuo",
+        "description": "Acesso a programas de certificação, conferências e treinamento em tecnologias emergentes. Suportamos seu desenvolvimento profissional em cada estágio de sua carreira."
+      },
+      "innovation": {
+        "title": "Trabalhe em Problemas de Ponta",
+        "description": "Enfrente desafios complexos de dados em saúde, finanças e indústria. Seu trabalho impacta diretamente as decisões estratégicas de organizações Fortune 500."
+      },
+      "culture": {
+        "title": "Cultura Colaborativa",
+        "description": "Trabalhe ao lado de especialistas de classe mundial em ciência de dados, engenharia e análise. Compartilhe conhecimento, desafie suposições e cresça juntos como equipe."
+      },
+      "growth": {
+        "title": "Caminho Claro de Carreira",
+        "description": "Avance sua carreira com mentoria, desenvolvimento de habilidades e oportunidades de liderança. Reconhecemos e recompensamos excelência e inovação."
+      },
+      "diversity": {
+        "title": "Diversidade e Inclusão",
+        "description": "Acreditamos que perspectivas diversas impulsionam melhores soluções. Estamos comprometidos em construir um ambiente inclusivo onde todos possam prosperar."
+      },
+      "benefits": {
+        "title": "Compensação Competitiva",
+        "description": "Salário competitivo, benefícios de saúde, arranjos de trabalho flexível e incentivos de desempenho alinhados com o sucesso da empresa."
+      }
+    },
+    "openings": {
+      "title": "Vagas Abertas",
+      "subtitle": "Estamos ativamente recrutando talentos excepcionais em funções principais. Candidatar-se a ingressar em nossa equipe em crescimento.",
+      "skills": "Habilidades Necessárias",
+      "apply": "Candidatar Agora",
+      "datascientist": {
+        "title": "Cientista de Dados Sênior",
+        "level": "Intermediário a Sênior",
+        "location": "Salvador, BA",
+        "type": "Tempo Integral",
+        "description": "Lide com o desenvolvimento de modelos avançados de machine learning e soluções de análise preditiva. Você trabalhará com conjuntos de dados complexos para resolver problemas reais de negócios, mentorizar cientistas de dados juniores e impulsionar inovação em nossas metodologias analíticas.",
+        "skill1": "Machine Learning",
+        "skill2": "Python/R",
+        "skill3": "Análise Estatística",
+        "skill4": "TensorFlow/PyTorch",
+        "skill5": "Visão de Negócios"
+      },
+      "dataengineer": {
+        "title": "Engenheiro de Dados",
+        "level": "Intermediário",
+        "location": "Salvador, BA",
+        "type": "Tempo Integral",
+        "description": "Projete e implemente pipelines de dados escaláveis, processos ETL e infraestrutura em nuvem. Você colaborará com cientistas de dados e equipes de análise para garantir entrega confiável de dados e manter sistemas de alto desempenho que alimentam nossa plataforma de análise.",
+        "skill1": "ETL/ELT",
+        "skill2": "SQL/NoSQL",
+        "skill3": "Plataformas em Nuvem",
+        "skill4": "Apache Spark",
+        "skill5": "DevOps"
+      },
+      "analyst": {
+        "title": "Analista de Business Intelligence",
+        "level": "Intermediário",
+        "location": "Salvador, BA",
+        "type": "Tempo Integral",
+        "description": "Crie dashboards intuitivos e relatórios abrangentes que traduzem dados complexos em insights de negócios acionáveis. Você parceirizará com clientes para entender seus KPIs, projetar estratégias de visualização e garantir precisão e acessibilidade de dados.",
+        "skill1": "Ferramentas de BI",
+        "skill2": "SQL",
+        "skill3": "Visualização de Dados",
+        "skill4": "Design de Dashboard",
+        "skill5": "Comunicação"
+      }
+    },
+    "culture": {
+      "title": "Nossa Cultura e Valores",
+      "subtitle": "Esses princípios guiam nosso trabalho e definem o que significa fazer parte da InsightTech Solutions.",
+      "excellence": {
+        "title": "Excelência Técnica",
+        "description": "Mantemos os mais altos padrões em engenharia e análise. Nos desafiamos a melhorar continuamente e entregar soluções que resistem ao escrutínio rigoroso."
+      },
+      "innovation": {
+        "title": "Inovação Contínua",
+        "description": "Permanecemos na vanguarda da tecnologia. Experimentação, aprendizado com falhas e adoção de ferramentas emergentes são parte do nosso DNA."
+      },
+      "collaboration": {
+        "title": "Trabalho em Equipe Colaborativo",
+        "description": "Sem silos. Trabalhamos entre disciplinas para entregar soluções completas. Suas ideias importam e perspectivas diversas fortalecem nossos resultados."
+      },
+      "growth": {
+        "title": "Compromisso com Crescimento",
+        "description": "Investimos em seu desenvolvimento. Seja habilidades técnicas, capacidades de liderança ou expertise em domínio, suportamos sua jornada."
+      }
+    },
+    "cta": {
+      "title": "Não Vê Seu Cargo Listado?",
+      "description": "Estamos sempre procurando por indivíduos talentosos que são apaixonados por dados e inovação. Envie-nos seu currículo e vamos conversar sobre como você pode crescer conosco.",
+      "button": "Enviar Seu Currículo"
     }
   },
   "cookie": {

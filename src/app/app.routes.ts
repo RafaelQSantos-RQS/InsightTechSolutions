@@ -50,6 +50,18 @@ export const routes: Routes = [
     title: 'Cookie Policy - InsightTech Solutions',
   },
   {
+    path: 'partner-program',
+    loadComponent: () =>
+      import('./pages/partner-program/partner-program').then((m) => m.PartnerProgram),
+    title: 'Partner Program - InsightTech Solutions',
+  },
+  {
+    path: 'careers',
+    loadComponent: () =>
+      import('./pages/careers/careers').then((m) => m.Careers),
+    title: 'Careers - InsightTech Solutions',
+  },
+  {
     path: '**',
     redirectTo: '',
   },

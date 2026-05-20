@@ -10,6 +10,8 @@
     "about": "About",
     "services": "Services",
     "caseStudies": "Case Studies",
+    "partners": "Partners",
+    "careers": "Careers",
     "contact": "Contact"
   },
   "home": {
@@ -368,6 +370,185 @@
         "title": "9. Contact Us",
         "text": "If you have any questions about these Terms, please contact us at contact@insighttech.com."
       }
+    }
+  },
+  "partner": {
+    "hero": {
+      "title": "Strategic Partnership Opportunities",
+      "description": "Join InsightTech Solutions in shaping the future of business intelligence. We're building an ecosystem of strategic partners who share our commitment to excellence, innovation, and transformative data solutions."
+    },
+    "overview": {
+      "title": "Partnership Categories",
+      "subtitle": "We offer multiple partnership models tailored to your organizational strengths and market focus.",
+      "technology": {
+        "title": "Technology Partners",
+        "description": "Integrate your platforms and solutions with our advanced analytics infrastructure to deliver comprehensive data intelligence to mutual customers."
+      },
+      "consulting": {
+        "title": "Consulting Partners",
+        "description": "Collaborate with our team to deliver end-to-end data transformation services, leveraging our methodologies and expertise in your market segments."
+      },
+      "research": {
+        "title": "Research & Academic Partners",
+        "description": "Partner with our R&D team to advance cutting-edge data science research and develop next-generation analytical capabilities."
+      }
+    },
+    "tiers": {
+      "title": "Partnership Tiers",
+      "subtitle": "Each tier offers distinct benefits, market access, and revenue-sharing models aligned with your business objectives.",
+      "strategic": {
+        "label": "PREMIUM",
+        "title": "Strategic Partner",
+        "description": "For organizations seeking deep integration and co-innovation on enterprise-scale solutions.",
+        "benefits": "Key Benefits",
+        "benefit1": "Co-marketing and joint go-to-market initiatives",
+        "benefit2": "Revenue sharing on jointly developed solutions",
+        "benefit3": "Dedicated partnership manager and technical support",
+        "benefit4": "Priority access to new product features and beta programs"
+      },
+      "technology": {
+        "label": "GROWTH",
+        "title": "Technology Partner",
+        "description": "For software platforms and technology providers seeking seamless integration with our analytics platform.",
+        "benefits": "Key Benefits",
+        "benefit1": "API integration and connector development support",
+        "benefit2": "Marketing feature in partner directory",
+        "benefit3": "Technical support and integration assistance",
+        "benefit4": "Volume-based pricing and licensing models"
+      },
+      "reseller": {
+        "label": "GROWTH",
+        "title": "Reseller Partner",
+        "description": "For consulting firms and service providers looking to expand their analytics offerings.",
+        "benefits": "Key Benefits",
+        "benefit1": "Competitive reseller margins and pricing tiers",
+        "benefit2": "Training and certification programs for your team",
+        "benefit3": "Sales enablement resources and marketing materials",
+        "benefit4": "Deal registration and lead sharing programs"
+      },
+      "cta": "Start Partnership Conversation"
+    },
+    "coInnovation": {
+      "title": "Co-Innovation Opportunities",
+      "subtitle": "We actively seek partnerships that push the boundaries of what's possible in data science and business intelligence.",
+      "research": {
+        "title": "Research Collaboration",
+        "description": "Joint development of proprietary algorithms and methodologies to solve complex industry challenges. Access to our R&D resources and thought leadership."
+      },
+      "collaboration": {
+        "title": "Customer Success",
+        "description": "Partner with us to deliver superior customer outcomes. Share best practices, case studies, and success metrics to strengthen market positioning."
+      },
+      "growth": {
+        "title": "Market Expansion",
+        "description": "Leverage our expertise to expand into new verticals or geographic markets. Benefit from shared market intelligence and customer introduction programs."
+      }
+    },
+    "cta": {
+      "title": "Ready to Build Something Great Together?",
+      "description": "Let's explore partnership opportunities that align with your strategic objectives and create lasting value for both organizations.",
+      "button": "Discuss Partnership"
+    }
+  },
+  "careers": {
+    "hero": {
+      "title": "Join Our Mission to Transform Data into Strategic Knowledge",
+      "description": "At InsightTech Solutions, we're building the future of business intelligence. We're looking for analytical minds, creative problem-solvers, and passionate technologists who want to make a real impact."
+    },
+    "benefits": {
+      "title": "Why Join InsightTech Solutions",
+      "subtitle": "We invest in our people, fostering a culture of continuous learning and professional growth.",
+      "learning": {
+        "title": "Continuous Learning",
+        "description": "Access to certification programs, conferences, and training in emerging technologies. We support your professional development at every stage of your career."
+      },
+      "innovation": {
+        "title": "Work on Cutting-Edge Problems",
+        "description": "Tackle complex data challenges across healthcare, finance, and industry. Your work directly impacts strategic decisions for Fortune 500 organizations."
+      },
+      "culture": {
+        "title": "Collaborative Culture",
+        "description": "Work alongside world-class specialists in data science, engineering, and analytics. Share knowledge, challenge assumptions, and grow together as a team."
+      },
+      "growth": {
+        "title": "Clear Career Path",
+        "description": "Advance your career with mentorship, skill development, and leadership opportunities. We recognize and reward excellence and innovation."
+      },
+      "diversity": {
+        "title": "Diversity & Inclusion",
+        "description": "We believe diverse perspectives drive better solutions. We're committed to building an inclusive environment where everyone can thrive."
+      },
+      "benefits": {
+        "title": "Competitive Compensation",
+        "description": "Competitive salary, health benefits, flexible work arrangements, and performance incentives aligned with company success."
+      }
+    },
+    "openings": {
+      "title": "Current Open Positions",
+      "subtitle": "We're actively hiring exceptional talent across key roles. Apply to join our growing team.",
+      "skills": "Required Skills",
+      "apply": "Apply Now",
+      "datascientist": {
+        "title": "Senior Data Scientist",
+        "level": "Mid to Senior",
+        "location": "Salvador, BA",
+        "type": "Full-time",
+        "description": "Lead the development of advanced machine learning models and predictive analytics solutions. You'll work with complex datasets to solve real-world business problems, mentor junior data scientists, and drive innovation in our analytical methodologies.",
+        "skill1": "Machine Learning",
+        "skill2": "Python/R",
+        "skill3": "Statistical Analysis",
+        "skill4": "TensorFlow/PyTorch",
+        "skill5": "Business Acumen"
+      },
+      "dataengineer": {
+        "title": "Data Engineer",
+        "level": "Mid",
+        "location": "Salvador, BA",
+        "type": "Full-time",
+        "description": "Design and implement scalable data pipelines, ETL processes, and cloud infrastructure. You'll collaborate with data scientists and analytics teams to ensure reliable data delivery and maintain high-performance systems that power our analytics platform.",
+        "skill1": "ETL/ELT",
+        "skill2": "SQL/NoSQL",
+        "skill3": "Cloud Platforms",
+        "skill4": "Apache Spark",
+        "skill5": "DevOps"
+      },
+      "analyst": {
+        "title": "Business Intelligence Analyst",
+        "level": "Mid",
+        "location": "Salvador, BA",
+        "type": "Full-time",
+        "description": "Create intuitive dashboards and comprehensive reports that translate complex data into actionable business insights. You'll partner with clients to understand their KPIs, design visualization strategies, and ensure data accuracy and accessibility.",
+        "skill1": "BI Tools",
+        "skill2": "SQL",
+        "skill3": "Data Visualization",
+        "skill4": "Dashboard Design",
+        "skill5": "Communication"
+      }
+    },
+    "culture": {
+      "title": "Our Culture & Values",
+      "subtitle": "These principles guide our work and define what it means to be part of InsightTech Solutions.",
+      "excellence": {
+        "title": "Technical Excellence",
+        "description": "We maintain the highest standards in engineering and analysis. We challenge ourselves to continuously improve and deliver solutions that withstand rigorous scrutiny."
+      },
+      "innovation": {
+        "title": "Continuous Innovation",
+        "description": "We stay at the forefront of technology. Experimentation, learning from failures, and embracing emerging tools are part of our DNA."
+      },
+      "collaboration": {
+        "title": "Collaborative Teamwork",
+        "description": "No silos. We work across disciplines to deliver comprehensive solutions. Your ideas matter, and diverse perspectives strengthen our outcomes."
+      },
+      "growth": {
+        "title": "Commitment to Growth",
+        "description": "We invest in your development. Whether it's technical skills, leadership abilities, or domain expertise, we support your journey."
+      }
+    },
+    "cta": {
+      "title": "Don't See Your Role Listed?",
+      "description": "We're always looking for talented individuals who are passionate about data and innovation. Send us your resume and let's talk about how you can grow with us.",
+      "button": "Send Your Resume"
     }
   },
   "cookie": {

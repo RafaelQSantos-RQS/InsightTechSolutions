@@ -23,14 +23,14 @@ export class Contact {
       labelKey: 'contact.partnerships.label',
       titleKey: 'contact.partnerships.title',
       descriptionKey: 'contact.partnerships.description',
-      link: '/contact',
+      link: '/partner-program',
       linkTextKey: 'contact.partnerships.link',
     },
     {
       labelKey: 'contact.careers.label',
       titleKey: 'contact.careers.title',
       descriptionKey: 'contact.careers.description',
-      link: '/contact',
+      link: '/careers',
       linkTextKey: 'contact.careers.link',
     },
   ];
