@@ -1,0 +1,269 @@
+<!-- Hero Section -->
+<section class="about-hero">
+  <div class="about-hero__container">
+    <div class="about-hero__content">
+      <h1 class="about-hero__title">
+        {{ 'about.hero.title' | translate }}
+      </h1>
+      <p class="about-hero__description">
+        {{ 'about.hero.description' | translate }}
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Mission, Vision & Values -->
+<section class="about-mvv">
+  <div class="about-mvv__container">
+    <!-- Mission -->
+    <div class="about-mvv__card">
+      <div class="about-mvv__icon">
+        <span class="material-symbols-outlined">target</span>
+      </div>
+      <h2 class="about-mvv__title">{{ 'about.mission.title' | translate }}</h2>
+      <p class="about-mvv__text">{{ 'about.mission.description' | translate }}</p>
+    </div>
+
+    <!-- Vision -->
+    <div class="about-mvv__card">
+      <div class="about-mvv__icon">
+        <span class="material-symbols-outlined">visibility</span>
+      </div>
+      <h2 class="about-mvv__title">{{ 'about.vision.title' | translate }}</h2>
+      <p class="about-mvv__text">{{ 'about.vision.description' | translate }}</p>
+    </div>
+
+    <!-- Values -->
+    <div class="about-mvv__card">
+      <div class="about-mvv__icon">
+        <span class="material-symbols-outlined">favorite</span>
+      </div>
+      <h2 class="about-mvv__title">{{ 'about.values.title' | translate }}</h2>
+      <p class="about-mvv__text">{{ 'about.values.description' | translate }}</p>
+    </div>
+  </div>
+</section>
+
+<!-- Our Team -->
+<section class="about-team">
+  <div class="about-team__container">
+    <div class="about-team__header">
+      <h2 class="about-team__title">{{ 'about.team.title' | translate }}</h2>
+      <p class="about-team__subtitle">{{ 'about.team.subtitle' | translate }}</p>
+    </div>
+
+    <div class="about-team__grid">
+      <!-- Carlos José -->
+      <article class="about-team__member">
+        <div class="about-team__member-icon">
+          <span class="material-symbols-outlined">psychology</span>
+        </div>
+        <h3 class="about-team__member-name">{{ 'about.team.members.0.name' | translate }}</h3>
+        <p class="about-team__member-role">{{ 'about.team.members.0.role' | translate }}</p>
+        <p class="about-team__member-description">{{ 'about.team.members.0.description' | translate }}</p>
+        <div class="about-team__member-skills">
+          @for (skill of ['about.team.members.0.skills.0' | translate, 'about.team.members.0.skills.1' | translate, 'about.team.members.0.skills.2' | translate]; track skill) {
+            <span class="about-team__skill-tag">{{ skill }}</span>
+          }
+        </div>
+      </article>
+
+      <!-- Carlos Erick -->
+      <article class="about-team__member">
+        <div class="about-team__member-icon">
+          <span class="material-symbols-outlined">architecture</span>
+        </div>
+        <h3 class="about-team__member-name">{{ 'about.team.members.1.name' | translate }}</h3>
+        <p class="about-team__member-role">{{ 'about.team.members.1.role' | translate }}</p>
+        <p class="about-team__member-description">{{ 'about.team.members.1.description' | translate }}</p>
+        <div class="about-team__member-skills">
+          @for (skill of ['about.team.members.1.skills.0' | translate, 'about.team.members.1.skills.1' | translate, 'about.team.members.1.skills.2' | translate]; track skill) {
+            <span class="about-team__skill-tag">{{ skill }}</span>
+          }
+        </div>
+      </article>
+
+      <!-- Rafael Queiroz -->
+      <article class="about-team__member">
+        <div class="about-team__member-icon">
+          <span class="material-symbols-outlined">cloud_queue</span>
+        </div>
+        <h3 class="about-team__member-name">{{ 'about.team.members.2.name' | translate }}</h3>
+        <p class="about-team__member-role">{{ 'about.team.members.2.role' | translate }}</p>
+        <p class="about-team__member-description">{{ 'about.team.members.2.description' | translate }}</p>
+        <div class="about-team__member-skills">
+          @for (skill of ['about.team.members.2.skills.0' | translate, 'about.team.members.2.skills.1' | translate, 'about.team.members.2.skills.2' | translate]; track skill) {
+            <span class="about-team__skill-tag">{{ skill }}</span>
+          }
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Core Values Section -->
+<section class="about-values">
+  <div class="about-values__container">
+    <div class="about-values__header">
+      <h2 class="about-values__title">{{ 'about.coreValues.title' | translate }}</h2>
+      <p class="about-values__subtitle">{{ 'about.coreValues.subtitle' | translate }}</p>
+    </div>
+
+    <div class="about-values__grid">
+      <!-- Excellence -->
+      <div class="about-values__value">
+        <div class="about-values__icon">
+          <span class="material-symbols-outlined">grade</span>
+        </div>
+        <h3 class="about-values__value-title">{{ 'about.coreValues.excellence.title' | translate }}</h3>
+        <p class="about-values__value-text">{{ 'about.coreValues.excellence.description' | translate }}</p>
+      </div>
+
+      <!-- Innovation -->
+      <div class="about-values__value">
+        <div class="about-values__icon">
+          <span class="material-symbols-outlined">lightbulb</span>
+        </div>
+        <h3 class="about-values__value-title">{{ 'about.coreValues.innovation.title' | translate }}</h3>
+        <p class="about-values__value-text">{{ 'about.coreValues.innovation.description' | translate }}</p>
+      </div>
+
+      <!-- Ethics -->
+      <div class="about-values__value">
+        <div class="about-values__icon">
+          <span class="material-symbols-outlined">verified</span>
+        </div>
+        <h3 class="about-values__value-title">{{ 'about.coreValues.ethics.title' | translate }}</h3>
+        <p class="about-values__value-text">{{ 'about.coreValues.ethics.description' | translate }}</p>
+      </div>
+
+      <!-- Data-Driven -->
+      <div class="about-values__value">
+        <div class="about-values__icon">
+          <span class="material-symbols-outlined">analytics</span>
+        </div>
+        <h3 class="about-values__value-title">{{ 'about.coreValues.dataDriven.title' | translate }}</h3>
+        <p class="about-values__value-text">{{ 'about.coreValues.dataDriven.description' | translate }}</p>
+      </div>
+
+      <!-- Collaboration -->
+      <div class="about-values__value">
+        <div class="about-values__icon">
+          <span class="material-symbols-outlined">groups</span>
+        </div>
+        <h3 class="about-values__value-title">{{ 'about.coreValues.collaboration.title' | translate }}</h3>
+        <p class="about-values__value-text">{{ 'about.coreValues.collaboration.description' | translate }}</p>
+      </div>
+
+      <!-- Learning -->
+      <div class="about-values__value">
+        <div class="about-values__icon">
+          <span class="material-symbols-outlined">school</span>
+        </div>
+        <h3 class="about-values__value-title">{{ 'about.coreValues.learning.title' | translate }}</h3>
+        <p class="about-values__value-text">{{ 'about.coreValues.learning.description' | translate }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Market Focus -->
+<section class="about-markets">
+  <div class="about-markets__container">
+    <div class="about-markets__header">
+      <h2 class="about-markets__title">{{ 'about.markets.title' | translate }}</h2>
+      <p class="about-markets__subtitle">{{ 'about.markets.subtitle' | translate }}</p>
+    </div>
+
+    <div class="about-markets__grid">
+      <!-- Healthcare -->
+      <div class="about-markets__market">
+        <div class="about-markets__icon">
+          <span class="material-symbols-outlined">health_and_safety</span>
+        </div>
+        <h3 class="about-markets__market-title">{{ 'about.markets.healthcare.title' | translate }}</h3>
+        <p class="about-markets__market-description">{{ 'about.markets.healthcare.description' | translate }}</p>
+      </div>
+
+      <!-- Finance -->
+      <div class="about-markets__market">
+        <div class="about-markets__icon">
+          <span class="material-symbols-outlined">trending_up</span>
+        </div>
+        <h3 class="about-markets__market-title">{{ 'about.markets.finance.title' | translate }}</h3>
+        <p class="about-markets__market-description">{{ 'about.markets.finance.description' | translate }}</p>
+      </div>
+
+      <!-- Industry -->
+      <div class="about-markets__market">
+        <div class="about-markets__icon">
+          <span class="material-symbols-outlined">factory</span>
+        </div>
+        <h3 class="about-markets__market-title">{{ 'about.markets.industry.title' | translate }}</h3>
+        <p class="about-markets__market-description">{{ 'about.markets.industry.description' | translate }}</p>
+      </div>
+
+      <!-- Technology -->
+      <div class="about-markets__market">
+        <div class="about-markets__icon">
+          <span class="material-symbols-outlined">computer</span>
+        </div>
+        <h3 class="about-markets__market-title">{{ 'about.markets.technology.title' | translate }}</h3>
+        <p class="about-markets__market-description">{{ 'about.markets.technology.description' | translate }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="about-why">
+  <div class="about-why__container">
+    <div class="about-why__header">
+      <h2 class="about-why__title">{{ 'about.why.title' | translate }}</h2>
+      <p class="about-why__subtitle">{{ 'about.why.subtitle' | translate }}</p>
+    </div>
+
+    <div class="about-why__grid">
+      <div class="about-why__item">
+        <div class="about-why__number">01</div>
+        <h3 class="about-why__item-title">{{ 'about.why.items.0.title' | translate }}</h3>
+        <p class="about-why__item-text">{{ 'about.why.items.0.description' | translate }}</p>
+      </div>
+
+      <div class="about-why__item">
+        <div class="about-why__number">02</div>
+        <h3 class="about-why__item-title">{{ 'about.why.items.1.title' | translate }}</h3>
+        <p class="about-why__item-text">{{ 'about.why.items.1.description' | translate }}</p>
+      </div>
+
+      <div class="about-why__item">
+        <div class="about-why__number">03</div>
+        <h3 class="about-why__item-title">{{ 'about.why.items.2.title' | translate }}</h3>
+        <p class="about-why__item-text">{{ 'about.why.items.2.description' | translate }}</p>
+      </div>
+
+      <div class="about-why__item">
+        <div class="about-why__number">04</div>
+        <h3 class="about-why__item-title">{{ 'about.why.items.3.title' | translate }}</h3>
+        <p class="about-why__item-text">{{ 'about.why.items.3.description' | translate }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="about-cta">
+  <div class="about-cta__container">
+    <h2 class="about-cta__title">{{ 'about.cta.title' | translate }}</h2>
+    <p class="about-cta__description">{{ 'about.cta.description' | translate }}</p>
+    <div class="about-cta__actions">
+      <a routerLink="/contact" class="about-cta__btn about-cta__btn--primary">
+        {{ 'common.getStarted' | translate }}
+        <span class="material-symbols-outlined">arrow_forward</span>
+      </a>
+      <a routerLink="/services" class="about-cta__btn about-cta__btn--secondary">
+        {{ 'common.explore' | translate }}
+      </a>
+    </div>
+  </div>
+</section>

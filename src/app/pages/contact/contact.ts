@@ -1,13 +1,12 @@
 import { Component, ChangeDetectionStrategy, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { NgOptimizedImage } from '@angular/common';
 import { TranslatePipe } from '../../pipes/translate-pipe';
 import { LanguageService } from '../../services/language';
 
 @Component({
   selector: 'app-contact',
-  imports: [RouterLink, ReactiveFormsModule, NgOptimizedImage, TranslatePipe],
+  imports: [RouterLink, ReactiveFormsModule, TranslatePipe],
   templateUrl: './contact.html',
   styleUrl: './contact.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

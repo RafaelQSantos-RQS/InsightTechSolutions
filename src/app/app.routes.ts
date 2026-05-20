@@ -8,6 +8,12 @@ export const routes: Routes = [
     title: 'InsightTech Solutions - Transforming Data into Strategic Knowledge',
   },
   {
+    path: 'about',
+    loadComponent: () =>
+      import('./pages/about/about').then((m) => m.About),
+    title: 'About - InsightTech Solutions',
+  },
+  {
     path: 'services',
     loadComponent: () =>
       import('./pages/services/services').then((m) => m.Services),

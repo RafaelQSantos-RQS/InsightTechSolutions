@@ -7,6 +7,7 @@
   },
   "nav": {
     "home": "Home",
+    "about": "About",
     "services": "Services",
     "caseStudies": "Case Studies",
     "contact": "Contact"
@@ -56,6 +57,122 @@
         "title": "Continuous Innovation",
         "description": "Remaining at the forefront of technological advancement. We proactively integrate novel methodologies to enhance analytical capabilities and client value."
       }
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Transforming Data into Strategic Knowledge",
+      "description": "InsightTech Solutions is a premier Business Intelligence firm specializing in data engineering, data science, and strategic analytics. We partner with organizations across healthcare, finance, and industry to unlock the transformative power of data-driven intelligence."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "Transform data into strategic knowledge through innovative Business Intelligence solutions, integrating data engineering, data science, and advanced analytics to support organizational decision-making."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "Recognized within 10 years as a leading global Business Intelligence firm, distinguished by continuous innovation, technical excellence, and demonstrable strategic impact on client outcomes."
+    },
+    "values": {
+      "title": "Our Values",
+      "description": "Excellence, innovation, ethical data stewardship, data-driven culture, collaborative partnerships, continuous learning, and sustainable growth guide every decision and relationship we forge."
+    },
+    "team": {
+      "title": "Leadership Team",
+      "subtitle": "Meet the experts driving InsightTech Solutions. Our co-founders bring complementary expertise across data science, systems architecture, and infrastructure engineering.",
+      "members": [
+        {
+          "name": "Carlos José",
+          "role": "Co-Founder & Data Science Lead",
+          "description": "Expert in machine learning and predictive modeling. Transforms complex data into actionable intelligence, leading our analytical capabilities.",
+          "skills": ["Machine Learning", "Statistical Analysis", "Predictive Modeling"]
+        },
+        {
+          "name": "Carlos Erick",
+          "role": "Co-Founder & Systems Architect",
+          "description": "Architect of scalable digital platforms and interfaces. Ensures our solutions are functional, intuitive, and aligned with client needs.",
+          "skills": ["System Architecture", "Web Development", "UX Design"]
+        },
+        {
+          "name": "Rafael Queiroz",
+          "role": "Co-Founder & Infrastructure Engineer",
+          "description": "Master of data pipelines and cloud infrastructure. Guarantees robust, secure, and scalable data operations across all environments.",
+          "skills": ["Data Engineering", "Cloud Infrastructure", "DevOps"]
+        }
+      ]
+    },
+    "coreValues": {
+      "title": "Core Values",
+      "subtitle": "The principles that guide our work and define our commitment to excellence.",
+      "excellence": {
+        "title": "Technical Excellence",
+        "description": "Unwavering commitment to highest standards in engineering, analysis, and delivery. Every solution reflects precision and rigor."
+      },
+      "innovation": {
+        "title": "Continuous Innovation",
+        "description": "Perpetual exploration of emerging technologies and methodologies. We lead the frontier of data intelligence."
+      },
+      "ethics": {
+        "title": "Ethical Responsibility",
+        "description": "Rigorous adherence to privacy, transparency, and responsible AI principles. Trust is our foundation."
+      },
+      "dataDriven": {
+        "title": "Data-Driven Culture",
+        "description": "Decisions grounded in evidence and rigorous analysis, both internally and throughout our client partnerships."
+      },
+      "collaboration": {
+        "title": "Collaborative Partnership",
+        "description": "Long-term relationships built on mutual respect, co-innovation, and shared success. Your victory is our victory."
+      },
+      "learning": {
+        "title": "Continuous Learning",
+        "description": "Investment in team development, knowledge sharing, and organizational growth. Learning fuels excellence."
+      }
+    },
+    "markets": {
+      "title": "Market Focus",
+      "subtitle": "We specialize in high-complexity sectors where data-driven decisions deliver exceptional value.",
+      "healthcare": {
+        "title": "Healthcare",
+        "description": "Clinical data analysis, operational optimization, predictive diagnostics, and resource management systems that improve patient outcomes."
+      },
+      "finance": {
+        "title": "Finance",
+        "description": "Risk analytics, fraud detection, portfolio optimization, and compliance monitoring for financial institutions."
+      },
+      "industry": {
+        "title": "Industry",
+        "description": "Predictive maintenance, supply chain optimization, quality control, and energy efficiency through advanced analytics."
+      },
+      "technology": {
+        "title": "Technology",
+        "description": "Scalable analytics infrastructure, AI integration, and data platform development for tech companies and startups."
+      }
+    },
+    "why": {
+      "title": "Why InsightTech Solutions",
+      "subtitle": "What sets us apart in the competitive landscape of business intelligence.",
+      "items": [
+        {
+          "title": "End-to-End Integration",
+          "description": "Unlike fragmented vendors, we deliver complete data solutions—from engineering pipelines to predictive models to executive dashboards—in seamless alignment."
+        },
+        {
+          "title": "Specialized Expertise",
+          "description": "Deep proficiency across data engineering, data science, and strategic analysis. Our team combines technical depth with business acumen."
+        },
+        {
+          "title": "Custom Solutions",
+          "description": "No one-size-fits-all approach. We build bespoke analytical ecosystems tailored to your organizational DNA and strategic objectives."
+        },
+        {
+          "title": "Ethical & Compliant",
+          "description": "LGPD and GDPR compliance by design. We combine technical excellence with absolute responsibility in data stewardship."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to Transform Your Data?",
+      "description": "Let's explore how InsightTech Solutions can unlock strategic value from your data and accelerate your competitive advantage."
     }
   },
   "services": {

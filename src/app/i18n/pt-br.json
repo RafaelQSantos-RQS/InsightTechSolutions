@@ -7,6 +7,7 @@
   },
   "nav": {
     "home": "Início",
+    "about": "Sobre",
     "services": "Serviços",
     "caseStudies": "Casos de Sucesso",
     "contact": "Contato"
@@ -56,6 +57,122 @@
         "title": "Inovação Contínua",
         "description": "Permanecemos na vanguarda do avanço tecnológico. Integramos proativamente novas metodologias para melhorar capacidades analíticas e valor para o cliente."
       }
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Transformando Dados em Conhecimento Estratégico",
+      "description": "InsightTech Solutions é uma empresa premium de Business Intelligence especializada em engenharia de dados, ciência de dados e análise estratégica. Parceirizamos com organizações em saúde, finanças e indústria para desbloquear o poder transformador da inteligência orientada por dados."
+    },
+    "mission": {
+      "title": "Nossa Missão",
+      "description": "Transformar dados em conhecimento estratégico por meio de soluções inovadoras em Business Intelligence, integrando engenharia de dados, ciência de dados e análise avançada para apoiar a tomada de decisão organizacional."
+    },
+    "vision": {
+      "title": "Nossa Visão",
+      "description": "Ser reconhecida em até 10 anos como uma das principais empresas globais em soluções de Business Intelligence, destacando-se pela inovação contínua, excelência tecnológica e impacto estratégico nos resultados de nossos clientes."
+    },
+    "values": {
+      "title": "Nossos Valores",
+      "description": "Excelência, inovação, responsabilidade ética com dados, cultura orientada a dados, parcerias colaborativas, aprendizado contínuo e crescimento sustentável guiam cada decisão e relacionamento que estabelecemos."
+    },
+    "team": {
+      "title": "Equipe de Liderança",
+      "subtitle": "Conheça os especialistas que impulsionam a InsightTech Solutions. Nossos co-fundadores trazem competências complementares em ciência de dados, arquitetura de sistemas e engenharia de infraestrutura.",
+      "members": [
+        {
+          "name": "Carlos José",
+          "role": "Co-Fundador & Líder de Ciência de Dados",
+          "description": "Especialista em machine learning e modelagem preditiva. Transforma dados complexos em inteligência acionável, liderando nossas capacidades analíticas.",
+          "skills": ["Machine Learning", "Análise Estatística", "Modelagem Preditiva"]
+        },
+        {
+          "name": "Carlos Erick",
+          "role": "Co-Fundador & Arquiteto de Sistemas",
+          "description": "Arquiteto de plataformas digitais escaláveis e interfaces intuitivas. Garante que nossas soluções sejam funcionais, usáveis e alinhadas com as necessidades dos clientes.",
+          "skills": ["Arquitetura de Sistemas", "Desenvolvimento Web", "Design UX"]
+        },
+        {
+          "name": "Rafael Queiroz",
+          "role": "Co-Fundador & Engenheiro de Infraestrutura",
+          "description": "Mestre em pipelines de dados e infraestrutura em nuvem. Garante operações de dados robustas, seguras e escaláveis em todos os ambientes.",
+          "skills": ["Engenharia de Dados", "Infraestrutura em Nuvem", "DevOps"]
+        }
+      ]
+    },
+    "coreValues": {
+      "title": "Valores Fundamentais",
+      "subtitle": "Os princípios que guiam nosso trabalho e definem nosso compromisso com excelência.",
+      "excellence": {
+        "title": "Excelência Técnica",
+        "description": "Compromisso inabalável com os mais altos padrões em engenharia, análise e entrega. Cada solução reflete precisão e rigor."
+      },
+      "innovation": {
+        "title": "Inovação Contínua",
+        "description": "Exploração perpétua de tecnologias e metodologias emergentes. Lideramos a fronteira da inteligência de dados."
+      },
+      "ethics": {
+        "title": "Responsabilidade Ética",
+        "description": "Adesão rigorosa aos princípios de privacidade, transparência e IA responsável. Confiança é nossa fundação."
+      },
+      "dataDriven": {
+        "title": "Cultura Orientada por Dados",
+        "description": "Decisões fundamentadas em evidências e análise rigorosa, tanto internamente quanto em todas as parcerias com clientes."
+      },
+      "collaboration": {
+        "title": "Parceria Colaborativa",
+        "description": "Relacionamentos de longo prazo construídos em respeito mútuo, co-inovação e sucesso compartilhado. Sua vitória é nossa vitória."
+      },
+      "learning": {
+        "title": "Aprendizado Contínuo",
+        "description": "Investimento no desenvolvimento da equipe, compartilhamento de conhecimento e crescimento organizacional. Aprendizado alimenta excelência."
+      }
+    },
+    "markets": {
+      "title": "Foco em Mercados",
+      "subtitle": "Nos especializamos em setores de alta complexidade onde decisões orientadas por dados entregam valor excepcional.",
+      "healthcare": {
+        "title": "Saúde",
+        "description": "Análise de dados clínicos, otimização operacional, diagnósticos preditivos e sistemas de gestão de recursos que melhoram resultados de pacientes."
+      },
+      "finance": {
+        "title": "Finanças",
+        "description": "Análise de risco, detecção de fraudes, otimização de portfólio e monitoramento de conformidade para instituições financeiras."
+      },
+      "industry": {
+        "title": "Indústria",
+        "description": "Manutenção preditiva, otimização de cadeia de suprimentos, controle de qualidade e eficiência energética através de análise avançada."
+      },
+      "technology": {
+        "title": "Tecnologia",
+        "description": "Infraestrutura analítica escalável, integração de IA e desenvolvimento de plataformas de dados para empresas tech e startups."
+      }
+    },
+    "why": {
+      "title": "Por Que InsightTech Solutions",
+      "subtitle": "O que nos diferencia no cenário competitivo de business intelligence.",
+      "items": [
+        {
+          "title": "Integração Ponta a Ponta",
+          "description": "Diferente de fornecedores fragmentados, entregamos soluções de dados completas — de pipelines de engenharia a modelos preditivos até dashboards executivos — em alinhamento perfeito."
+        },
+        {
+          "title": "Expertise Especializada",
+          "description": "Profundidade em engenharia de dados, ciência de dados e análise estratégica. Nossa equipe combina profundidade técnica com perspicácia de negócios."
+        },
+        {
+          "title": "Soluções Personalizadas",
+          "description": "Sem abordagem única para todos. Construímos ecossistemas analíticos sob medida adaptados ao seu DNA organizacional e objetivos estratégicos."
+        },
+        {
+          "title": "Ético e Compatível",
+          "description": "Conformidade com LGPD e GDPR por design. Combinamos excelência técnica com responsabilidade absoluta na gestão de dados."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Pronto para Transformar Seus Dados?",
+      "description": "Vamos explorar como a InsightTech Solutions pode desbloquear valor estratégico de seus dados e acelerar sua vantagem competitiva."
     }
   },
   "services": {

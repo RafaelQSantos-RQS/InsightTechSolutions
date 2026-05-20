@@ -8,23 +8,32 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
-    border: none;
-    background: transparent;
-    border-radius: 50%;
+    gap: 6px;
+    padding: 8px 12px;
+    border: 1px solid $color-border-muted;
+    background-color: $color-surface-container-lowest;
+    border-radius: $radius-default;
     cursor: pointer;
     color: $color-on-surface;
-    transition: background-color 0.2s ease;
+    transition: all 0.2s ease;
+    font-family: $font-family-body;
+    font-size: $font-size-body-md;
+    font-weight: $font-weight-medium;
 
     &:hover {
       background-color: $color-surface-variant;
+      border-color: $color-secondary;
     }
   }
 
-  &__icon {
-    width: 20px;
-    height: 20px;
+  &__flag {
+    font-size: 18px;
+    line-height: 1;
+  }
+
+  &__label {
+    @include text-label-caps;
+    color: $color-secondary;
   }
 
   &__dropdown {
